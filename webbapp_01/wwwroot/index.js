@@ -1,21 +1,3 @@
-// function webapp_01() {
-
-//      function handleClick() {
-//          alert("Hello World");
-//      };
- 
-//      var button1 = document.getElementById("button-01");
- 
-//      button1.addEventListener("click", handleClick);
- 
-//  }
- 
-//  webapp_01();
-
-// leftover function above, commented out for now
-
-
-
 function webapp_02() {
 
     //Get elements
