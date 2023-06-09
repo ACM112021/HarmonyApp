@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\webbapp_01.props" />
+</Project>

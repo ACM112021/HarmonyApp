@@ -1,0 +1,117 @@
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\appsettings.Development.json
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\appsettings.json
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\webapi_01.exe
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\webapi_01.deps.json
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\webapi_01.runtimeconfig.json
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\webapi_01.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\webapi_01.pdb
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.csproj.AssemblyReference.cache
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.AssemblyInfoInputs.cache
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.AssemblyInfo.cs
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.csproj.CoreCompileInputs.cache
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.MvcApplicationPartsAssemblyInfo.cs
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.MvcApplicationPartsAssemblyInfo.cache
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.webapi_01.Microsoft.AspNetCore.StaticWebAssets.props
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.build.webapi_01.props
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.webapi_01.props
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.webapi_01.props
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\staticwebassets.pack.json
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\staticwebassets.build.json
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\staticwebassets.development.json
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\scopedcss\bundle\webapi_01.styles.css
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.csproj.CopyComplete
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\refint\webapi_01.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.pdb
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\webapi_01.genruntimeconfig.cache
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\obj\Debug\net7.0\ref\webapi_01.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\System.Data.SqlClient.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\C#,.NET 2023\week_17\webAPIhw\webapi_01\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\appsettings.Development.json
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\appsettings.json
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\webapi_01.exe
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\webapi_01.deps.json
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\webapi_01.runtimeconfig.json
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\webapi_01.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\webapi_01.pdb
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\System.Data.SqlClient.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\HarmonyApp\webapi_01\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.csproj.AssemblyReference.cache
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.GeneratedMSBuildEditorConfig.editorconfig
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.AssemblyInfoInputs.cache
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.AssemblyInfo.cs
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.csproj.CoreCompileInputs.cache
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.MvcApplicationPartsAssemblyInfo.cs
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.MvcApplicationPartsAssemblyInfo.cache
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.webapi_01.Microsoft.AspNetCore.StaticWebAssets.props
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.build.webapi_01.props
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.webapi_01.props
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.webapi_01.props
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets.pack.json
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets.build.json
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets.development.json
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\scopedcss\bundle\webapi_01.styles.css
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.csproj.CopyComplete
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.dll
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\refint\webapi_01.dll
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.pdb
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.genruntimeconfig.cache
+D:\HarmonyApp\webapi_01\obj\Debug\net7.0\ref\webapi_01.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\appsettings.Development.json
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\appsettings.json
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\webapi_01.exe
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\webapi_01.deps.json
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\webapi_01.runtimeconfig.json
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\webapi_01.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\webapi_01.pdb
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\System.Data.SqlClient.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.csproj.AssemblyReference.cache
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.GeneratedMSBuildEditorConfig.editorconfig
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.AssemblyInfoInputs.cache
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.AssemblyInfo.cs
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.csproj.CoreCompileInputs.cache
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.MvcApplicationPartsAssemblyInfo.cs
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.MvcApplicationPartsAssemblyInfo.cache
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.webapi_01.Microsoft.AspNetCore.StaticWebAssets.props
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.build.webapi_01.props
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.webapi_01.props
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.webapi_01.props
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets.pack.json
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets.build.json
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\staticwebassets.development.json
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\scopedcss\bundle\webapi_01.styles.css
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.csproj.CopyComplete
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\refint\webapi_01.dll
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.pdb
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\webapi_01.genruntimeconfig.cache
+D:\HarmonyApp\HarmonyApp\webapi_01\obj\Debug\net7.0\ref\webapi_01.dll

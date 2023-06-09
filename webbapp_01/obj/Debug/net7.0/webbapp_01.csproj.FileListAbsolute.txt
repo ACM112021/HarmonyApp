@@ -1,0 +1,81 @@
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\bin\Debug\net7.0\appsettings.Development.json
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\bin\Debug\net7.0\appsettings.json
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\bin\Debug\net7.0\webbapp_01.staticwebassets.runtime.json
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\bin\Debug\net7.0\webbapp_01.exe
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\bin\Debug\net7.0\webbapp_01.deps.json
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\bin\Debug\net7.0\webbapp_01.runtimeconfig.json
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\bin\Debug\net7.0\webbapp_01.dll
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\bin\Debug\net7.0\webbapp_01.pdb
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\webbapp_01.csproj.AssemblyReference.cache
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\webbapp_01.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\webbapp_01.AssemblyInfoInputs.cache
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\webbapp_01.AssemblyInfo.cs
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\webbapp_01.csproj.CoreCompileInputs.cache
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\webbapp_01.MvcApplicationPartsAssemblyInfo.cache
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.webbapp_01.Microsoft.AspNetCore.StaticWebAssets.props
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.build.webbapp_01.props
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.webbapp_01.props
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.webbapp_01.props
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\staticwebassets.pack.json
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\staticwebassets.build.json
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\staticwebassets.development.json
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\scopedcss\bundle\webbapp_01.styles.css
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\webbapp_01.dll
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\refint\webbapp_01.dll
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\webbapp_01.pdb
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\webbapp_01.genruntimeconfig.cache
+D:\C#,.NET 2023\week_18\week18hw\webbapp_01\obj\Debug\net7.0\ref\webbapp_01.dll
+D:\HarmonyApp\webbapp_01\bin\Debug\net7.0\appsettings.Development.json
+D:\HarmonyApp\webbapp_01\bin\Debug\net7.0\appsettings.json
+D:\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.staticwebassets.runtime.json
+D:\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.exe
+D:\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.deps.json
+D:\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.runtimeconfig.json
+D:\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.dll
+D:\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.pdb
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.csproj.AssemblyReference.cache
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.GeneratedMSBuildEditorConfig.editorconfig
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.AssemblyInfoInputs.cache
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.AssemblyInfo.cs
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.csproj.CoreCompileInputs.cache
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.MvcApplicationPartsAssemblyInfo.cache
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.webbapp_01.Microsoft.AspNetCore.StaticWebAssets.props
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.build.webbapp_01.props
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.webbapp_01.props
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.webbapp_01.props
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets.pack.json
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets.build.json
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets.development.json
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\scopedcss\bundle\webbapp_01.styles.css
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.dll
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\refint\webbapp_01.dll
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.pdb
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.genruntimeconfig.cache
+D:\HarmonyApp\webbapp_01\obj\Debug\net7.0\ref\webbapp_01.dll
+D:\HarmonyApp\HarmonyApp\webbapp_01\bin\Debug\net7.0\appsettings.Development.json
+D:\HarmonyApp\HarmonyApp\webbapp_01\bin\Debug\net7.0\appsettings.json
+D:\HarmonyApp\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.staticwebassets.runtime.json
+D:\HarmonyApp\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.exe
+D:\HarmonyApp\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.deps.json
+D:\HarmonyApp\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.runtimeconfig.json
+D:\HarmonyApp\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.dll
+D:\HarmonyApp\HarmonyApp\webbapp_01\bin\Debug\net7.0\webbapp_01.pdb
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.csproj.AssemblyReference.cache
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.GeneratedMSBuildEditorConfig.editorconfig
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.AssemblyInfoInputs.cache
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.AssemblyInfo.cs
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.csproj.CoreCompileInputs.cache
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.MvcApplicationPartsAssemblyInfo.cache
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.webbapp_01.Microsoft.AspNetCore.StaticWebAssets.props
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.build.webbapp_01.props
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.webbapp_01.props
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.webbapp_01.props
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets.pack.json
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets.build.json
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\staticwebassets.development.json
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\scopedcss\bundle\webbapp_01.styles.css
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.dll
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\refint\webbapp_01.dll
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.pdb
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\webbapp_01.genruntimeconfig.cache
+D:\HarmonyApp\HarmonyApp\webbapp_01\obj\Debug\net7.0\ref\webbapp_01.dll

@@ -31,3 +31,9 @@ D:\HarmonyApp\HarmonyApp\webAPI\harmonyAPI_02\obj\Debug\net7.0\refint\harmonyAPI
 D:\HarmonyApp\HarmonyApp\webAPI\harmonyAPI_02\obj\Debug\net7.0\harmonyAPI_02.pdb
 D:\HarmonyApp\HarmonyApp\webAPI\harmonyAPI_02\obj\Debug\net7.0\harmonyAPI_02.genruntimeconfig.cache
 D:\HarmonyApp\HarmonyApp\webAPI\harmonyAPI_02\obj\Debug\net7.0\ref\harmonyAPI_02.dll
+D:\HarmonyApp\HarmonyApp\webAPI\harmonyAPI_02\bin\Debug\net7.0\System.Data.SqlClient.dll
+D:\HarmonyApp\HarmonyApp\webAPI\harmonyAPI_02\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+D:\HarmonyApp\HarmonyApp\webAPI\harmonyAPI_02\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+D:\HarmonyApp\HarmonyApp\webAPI\harmonyAPI_02\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+D:\HarmonyApp\HarmonyApp\webAPI\harmonyAPI_02\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\HarmonyApp\HarmonyApp\webAPI\harmonyAPI_02\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

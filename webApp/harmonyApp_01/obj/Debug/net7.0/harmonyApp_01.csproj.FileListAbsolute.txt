@@ -12,8 +12,6 @@ D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\harmonyApp_01.Ass
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\harmonyApp_01.AssemblyInfo.cs
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\harmonyApp_01.csproj.CoreCompileInputs.cache
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\harmonyApp_01.MvcApplicationPartsAssemblyInfo.cache
-D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\harmonyApp_01.RazorAssemblyInfo.cache
-D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\harmonyApp_01.RazorAssemblyInfo.cs
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\staticwebassets\msbuild.harmonyApp_01.Microsoft.AspNetCore.StaticWebAssets.props
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\staticwebassets\msbuild.build.harmonyApp_01.props
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.harmonyApp_01.props
@@ -21,9 +19,7 @@ D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\staticwebassets\m
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\staticwebassets.pack.json
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\staticwebassets.build.json
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\staticwebassets.development.json
-D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\scopedcss\bundle\harmonyApp_01.styles.css
-D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\scopedcss\projectbundle\harmonyApp_01.bundle.scp.css
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\harmonyApp_01.dll
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\refint\harmonyApp_01.dll
 D:\HarmonyApp\HarmonyApp\webApp\harmonyApp_01\obj\Debug\net7.0\harmonyApp_01.pdb

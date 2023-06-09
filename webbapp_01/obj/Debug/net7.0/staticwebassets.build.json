@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "8Whx5Jmciod92wQ2uSzKEu4IWtXPwgU5B2qWsv2VcKE=",
+  "Source": "webbapp_01",
+  "BasePath": "_content/webbapp_01",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "webbapp_01\\wwwroot",
+      "Source": "webbapp_01",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "BasePath": "_content/webbapp_01",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\favicon.ico",
+      "SourceId": "webbapp_01",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "BasePath": "_content/webbapp_01",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\index.css",
+      "SourceId": "webbapp_01",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "BasePath": "_content/webbapp_01",
+      "RelativePath": "index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.css"
+    },
+    {
+      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\index.html",
+      "SourceId": "webbapp_01",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "BasePath": "_content/webbapp_01",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\index.js",
+      "SourceId": "webbapp_01",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "BasePath": "_content/webbapp_01",
+      "RelativePath": "index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.js"
+    }
+  ]
+}

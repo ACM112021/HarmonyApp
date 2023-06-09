@@ -1,0 +1,90 @@
+/* 
+   body {
+     background-color: lavender;
+ }
+
+ .my-header,
+ .my-footer {
+     background-color: darkgray;
+     text-align: center;
+     color: white;
+ }
+
+ .my-main {
+     background-color: white;
+     padding: 20px;
+ }
+
+ .my-right {
+     background-color: lightgray;
+     text-align: center;
+     padding-top: 20px;
+ }
+
+ .row-insert-update-delete {
+    background-color: lightgray;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h4 {
+    text-align: center;
+}
+
+form {
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+
+
+
+/* copied over working application code here, didn't fix
+Wednesday 6/7/23 9:48am */
+
+
+
+
+
+
+body {
+    background-color: lavender;
+}
+
+
+.my-header,
+.my-footer {
+    background-color: darkgray;
+    text-align: center;
+    color: white;
+}
+
+.col-employee-table {
+    background-color: white;
+    padding-top: 20px;
+}
+
+.my-right {
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.row-insert-update-delete {
+    background-color: lightgray;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h4 {
+    text-align: center;
+}
+
+form {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
