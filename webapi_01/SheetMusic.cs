@@ -190,7 +190,7 @@ namespace webapi_01
             SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
             sqlCommand.CommandType = System.Data.CommandType.Text;
 
-            SqlParameter paramMusicSheetId = new SqlParameter("@paramMusicSheetId", musicSheetId);
+            SqlParameter paramMusicSheetId = new SqlParameter("@MusicSheetId", musicSheetId);
             paramMusicSheetId.DbType = System.Data.DbType.Int32;
             sqlCommand.Parameters.Add(paramMusicSheetId);
 
