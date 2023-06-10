@@ -93,6 +93,14 @@ namespace webapi_01
             return employees;
         }
 
+
+
+
+
+
+
+        
+
         public static int InsertEmployee(Employee employee, SqlConnection sqlConnection)
         {
             string sql = "insert into Employee (LastName, FirstName, Salary) values (@LastName, @FirstName, @Salary);";
@@ -143,6 +151,15 @@ namespace webapi_01
             return rowsAffected;
         }
 
+
+
+
+
+
+
+
+
+
         public static int DeleteEmployee(int employeeId, SqlConnection sqlConnection)
         {
             string sql = "delete from Employee where EmployeeId = @EmployeeId;";
@@ -158,10 +175,19 @@ namespace webapi_01
             return rowsAffected;
         }
 
+
+
+
+
+
         public void ShowEmployee()
         {
             Console.WriteLine($"{EmployeeId}, {LastName}, {FirstName}, {Salary}");
         }
+
+
+
+        
 
         public static void ShowEmployees(List<Employee> employees)
         {
