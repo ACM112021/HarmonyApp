@@ -15,46 +15,46 @@ namespace webapi_01.Controllers;
 [ApiController]
 [Route("[controller]")]
 // [EnableCors("AllowOrigin")]
-public class EmployeeController : ControllerBase
+public class MusicSheetController : ControllerBase
 {
     private readonly ILogger<WeatherForecastController> _logger;
 
-    public EmployeeController(ILogger<WeatherForecastController> logger)
+    public MusicSheetController(ILogger<WeatherForecastController> logger)
     {
         _logger = logger;
     }
 
     [HttpGet]
-    [Route("/SearchEmployees")]
-    public Response SearchEmployees(string pageSize = "10", string pageNumber = "1", string search = "")
+    [Route("/SearchMusicSheets")]
+    public Response SearchMusicSheets(string pageSize = "10", string pageNumber = "1", string search = "")
     {
         Response response = new Response();
         try
         {
-            List<Employee> employees = new List<Employee>();
+            List<MusicSheet> musicSheets = new List<MusicSheet>();
 
             string connectionString = GetConnectionString();
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 sqlConnection.Open();
-                employees = Employee.SearchEmployees(sqlConnection, search, Convert.ToInt32(pageSize), Convert.ToInt32(pageNumber));
+                musicSheets = MusicSheet.SearchMusicSheets(sqlConnection, search, Convert.ToInt32(pageSize), Convert.ToInt32(pageNumber));
             }
 
             string message = "";
 
-            if (employees.Count() > 0)
+            if (musicSheets.Count() > 0)
             {
-                int employeeCount = employees[0].EmployeeCount;
-                message = $"Found {employeeCount} employees!";
+                int musicSheetCount = musicSheets[0].MusicSheetCount;
+                message = $"Found {musicSheetCount} music sheets!";
             }
             else
             {
-                message = "No employees met your search criteria.";
+                message = "No music sheets met your search criteria.";
             }
 
             response.Result = "success";
             response.Message = message;
-            response.Employees = employees;
+            response.MusicSheets = musicSheets;
         }
         catch (Exception e)
         {
@@ -64,16 +64,31 @@ public class EmployeeController : ControllerBase
         return response;
     }
 
+
+
+
+
+
+
+ // here @ Friday 6/9/23 9:31pm
+
+
+
+
+
+
+
+
     [HttpGet]
-    [Route("/InsertEmployee")]
-    public Response InsertEmployee(string lastName, string firstName, string salary)
+    [Route("/InsertMusicSheet")]
+    public Response InsertMusicSheet(string songTitle, string startDate, string completedDate)
     {
         Response response = new Response();
         try
         {
-            List<Employee> employees = new List<Employee>();
+            List<MusicSheet> musicSheets = new List<MusicSheet>();
 
-            Employee employee = new Employee(lastName, firstName, Convert.ToDecimal(salary));
+            MusicSheet musicSheet = new MusicSheet(songTitle, startDate, completedDate);
 
             int rowsAffected = 0;
 
@@ -81,61 +96,13 @@ public class EmployeeController : ControllerBase
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 sqlConnection.Open();
-                rowsAffected = Employee.InsertEmployee(employee, sqlConnection);
-                employees = Employee.SearchEmployees(sqlConnection);
+                rowsAffected = MusicSheet.InsertMusicSheet(musicSheet, sqlConnection);
+                musicSheets = MusicSheet.SearchMusicSheets(sqlConnection);
             }
 
             response.Result = (rowsAffected == 1) ? "success" : "failure";
             response.Message = $"{rowsAffected} rows affected.";
-            response.Employees = employees;
-        }
-        catch (Exception e)
-        {
-            response.Result = "failure";
-            response.Message = e.Message;
-        }
-
-        return response;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    [HttpGet]
-    [Route("/UpdateEmployee")]
-    public Response UpdateEmployee(string employeeId, string lastName, string firstName, string salary)
-    {
-        Response response = new Response();
-
-        try
-        {
-            List<Employee> employees = new List<Employee>();
-            Employee employee = new Employee(Convert.ToInt32(employeeId), lastName, firstName, Convert.ToDecimal(salary));
-
-            int rowsAffected = 0;
-
-            string connectionString = GetConnectionString();
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
-            {
-                sqlConnection.Open();
-                rowsAffected = Employee.UpdateEmployee(employee, sqlConnection);
-                employees = Employee.SearchEmployees(sqlConnection);
-            }
-
-            response.Result = (rowsAffected == 1) ? "success" : "failure";
-            response.Message = $"{rowsAffected} rows affected.";
-            response.Employees = employees;
+            response.MusicSheets = musicSheets;
         }
         catch (Exception e)
         {
@@ -146,28 +113,99 @@ public class EmployeeController : ControllerBase
         return response;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     [HttpGet]
-    [Route("/DeleteEmployee")]
-    public Response DeleteEmployee(string employeeId)
+    [Route("/UpdateMusicSheet")]
+    public Response UpdateMusicSheet(string musicSheetId, string songTitle, string startDate, string completedDate)
     {
         Response response = new Response();
 
         try
         {
-            List<Employee> employees = new List<Employee>();
+            List<MusicSheet> musicSheets = new List<MusicSheet>();
+            MusicSheet musicSheet = new MusicSheet(Convert.ToInt32(musicSheetId), songTitle, startDate, completedDate);
+
             int rowsAffected = 0;
 
             string connectionString = GetConnectionString();
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 sqlConnection.Open();
-                rowsAffected = Employee.DeleteEmployee(Convert.ToInt32(employeeId), sqlConnection);
-                employees = Employee.SearchEmployees(sqlConnection);
+                rowsAffected = MusicSheet.UpdateMusicSheet(musicSheet, sqlConnection);
+                musicSheets = MusicSheet.SearchMusicSheets(sqlConnection);
             }
 
             response.Result = (rowsAffected == 1) ? "success" : "failure";
             response.Message = $"{rowsAffected} rows affected.";
-            response.Employees = employees;
+            response.MusicSheets = musicSheets;
+        }
+        catch (Exception e)
+        {
+            response.Result = "failure";
+            response.Message = e.Message;
+        }
+
+        return response;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    [HttpGet]
+    [Route("/DeleteMusicSheet")]
+    public Response DeleteMusicSheet(string musicSheetId)
+    {
+        Response response = new Response();
+
+        try
+        {
+            List<MusicSheet> musicSheets = new List<MusicSheet>();
+            int rowsAffected = 0;
+
+            string connectionString = GetConnectionString();
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                sqlConnection.Open();
+                rowsAffected = MusicSheet.DeleteMusicSheet(Convert.ToInt32(musicSheetId), sqlConnection);
+                musicSheets = MusicSheet.SearchMusicSheets(sqlConnection);
+            }
+
+            response.Result = (rowsAffected == 1) ? "success" : "failure";
+            response.Message = $"{rowsAffected} rows affected.";
+            response.MusicSheets = musicSheets;
         }
         catch (Exception e)
         {
@@ -180,8 +218,8 @@ public class EmployeeController : ControllerBase
 
     static string GetConnectionString()
     {
-        string serverName = @"DESKTOP-RBF3DB2\SQLEXPRESS"; //Change to the "Server Name" you see when you launch SQL Server Management Studio.
-        string databaseName = "db01"; //Change to the database where you created your Employee table.
+        string serverName = @"DESKTOP-RBF3DB2\SQLEXPRESS"; 
+        string databaseName = "db01"; 
         string connectionString = $"data source={serverName}; database={databaseName}; Integrated Security=true;";
         return connectionString;
     }
