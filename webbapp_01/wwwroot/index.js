@@ -371,11 +371,21 @@ function webapp_02() {
         var textStartDate = document.getElementById("text-insert-start-date");
         var textCompletedDate = document.getElementById("text-insert-completed-date");
 
+
+
+        // allow null in Completed Date 6/10/23 1:08pm
+
+        if (!textCompletedDate.value) {
+            textCompletedDate.value = null; 
+          }
+
+
+
         var url = 'http://localhost:5174/InsertMusicSheet?songTitle=' + textSongTitle.value + '&startDate=' + textStartDate.value + '&completedDate=' + textCompletedDate.value;
 
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = doAfterInsertMusicSheet;
-        xhr.open('GET', url);
+        xhr.open('GET', url); 
         xhr.send(null);
 
         function doAfterInsertMusicSheet() {

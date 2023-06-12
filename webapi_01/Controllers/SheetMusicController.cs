@@ -81,14 +81,19 @@ public class MusicSheetController : ControllerBase
 
     [HttpGet]
     [Route("/InsertMusicSheet")]
-    public Response InsertMusicSheet(string songTitle, string startDate, string completedDate)
+    public Response InsertMusicSheet(string songTitle = "", string startDate = "", string completedDate = "")
     {
         Response response = new Response();
         try
         {
             List<MusicSheet> musicSheets = new List<MusicSheet>();
 
-            MusicSheet musicSheet = new MusicSheet(songTitle, startDate, completedDate);
+
+
+            MusicSheet musicSheet = new MusicSheet(
+                songTitle == "" ? null : songTitle, 
+                startDate == "" ? null : Convert.ToDateTime(startDate), 
+                completedDate == "" ? null : Convert.ToDateTime(completedDate));
 
             int rowsAffected = 0;
 
@@ -134,7 +139,7 @@ public class MusicSheetController : ControllerBase
 
     [HttpGet]
     [Route("/UpdateMusicSheet")]
-    public Response UpdateMusicSheet(string musicSheetId, string songTitle, string startDate, string completedDate)
+    public Response UpdateMusicSheet(string musicSheetId, string songTitle, DateTime? startDate, DateTime? completedDate)
     {
         Response response = new Response();
 
