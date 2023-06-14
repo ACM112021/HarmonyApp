@@ -101,9 +101,12 @@ function webapp_02() {
 
             // musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td><a href="#" class="song-link" data-id"' + musicSheet.musicSheetId + '">' + musicSheet.songTitle + '</a></td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
 
+
+
             // Tuesday 6/13/23 7:37PM: replacing the 'href="#"' attempt:
 
             // musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td><a href="D:\\HarmonyApp\\HarmonyApp\\pdfs\\' + musicSheet.pdfFileName + '" class="song-link" data-id="' + musicSheet.musicSheetId + '">' + musicSheet.songTitle + '</a></td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
+
 
 
             //2nd attempt, direct PDF file link:
@@ -113,7 +116,9 @@ function webapp_02() {
             // musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td><a href="D:/HarmonyApp/HarmonyApp/pdfs/8-ode-to-joy.pdf" class="song-link" data-id="' + musicSheet.musicSheetId + '">' + musicSheet.songTitle + '</a></td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
 
 
-            // 3rd attempt: removing local folders
+            
+
+            // 3rd attempt: moved pdfs folder to wwwroot
 
             musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td><a href="http://localhost:5057/pdfs/'+ musicSheet.pdfFileName +'.pdf" target="_blank" class="song-links" data-id="' + musicSheet.musicSheetId + '">' + musicSheet.songTitle + '</a></td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
 
