@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\index.js"
     },
     {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\pdfs\\8-ode-to-joy.pdf",
+      "PackagePath": "staticwebassets\\pdfs\\8-ode-to-joy.pdf"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.webbapp_01.props",
       "PackagePath": "build\\webbapp_01.props"
     },

@@ -15,6 +15,10 @@ namespace webapi_01
           public string? SongTitle { get; set; }
           public DateTime? StartDate { get; set; }
           public DateTime? CompletedDate { get; set; }
+
+          public string? PdfFileName { get; set; }
+
+          public string? SongUrl { get; set; }
           public int MusicSheetCount { get; set; }
 
           public MusicSheet()
@@ -36,14 +40,44 @@ namespace webapi_01
                CompletedDate = completedDate;
           }
 
-          public static List<MusicSheet> GetMusicSheets(SqlConnection sqlConnection)
+
+          // initial GetMusicSheets method:
+
+          // public static List<MusicSheet> GetMusicSheets(SqlConnection sqlConnection)
+          // {
+          //      List<MusicSheet> musicSheets = new List<MusicSheet>();
+
+          //      string sql = "select MusicSheetId, SongTitle, StartDate, CompletedDate from MusicSheet;";
+          //      SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
+          //      sqlCommand.CommandType = System.Data.CommandType.Text;
+          //      SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+               
+          //      while (sqlDataReader.Read())
+          //      {
+          //           MusicSheet musicSheet = new MusicSheet();
+
+          //           musicSheet.MusicSheetId = Convert.ToInt32(sqlDataReader["MusicSheetId"].ToString());
+          //           musicSheet.SongTitle = sqlDataReader["SongTitle"].ToString();
+          //           musicSheet.StartDate = Convert.ToDateTime(sqlDataReader["StartDate"].ToString() == "" ? null : sqlDataReader["StartDate"].ToString());
+          //           musicSheet.CompletedDate = Convert.ToDateTime(sqlDataReader["CompletedDate"].ToString() == "" ? null : sqlDataReader["CompletedDate"].ToString());
+
+          //           musicSheets.Add(musicSheet);
+          //      }
+
+          //      return musicSheets;
+          // }
+
+          // updated GetMusicSheets with PdfFilename property and passing it:
+
+          public static List<MusicSheet> GetMusicSheets(SqlConnection sqlConnection, string baseUrl)
           {
                List<MusicSheet> musicSheets = new List<MusicSheet>();
 
-               string sql = "select MusicSheetId, SongTitle, StartDate, CompletedDate from MusicSheet;";
+               string sql = "select MusicSheetId, SongTitle, StartDate, CompletedDate, PdfFileName from MusicSheet;";
                SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
                sqlCommand.CommandType = System.Data.CommandType.Text;
                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+               
                while (sqlDataReader.Read())
                {
                     MusicSheet musicSheet = new MusicSheet();
@@ -52,6 +86,14 @@ namespace webapi_01
                     musicSheet.SongTitle = sqlDataReader["SongTitle"].ToString();
                     musicSheet.StartDate = Convert.ToDateTime(sqlDataReader["StartDate"].ToString() == "" ? null : sqlDataReader["StartDate"].ToString());
                     musicSheet.CompletedDate = Convert.ToDateTime(sqlDataReader["CompletedDate"].ToString() == "" ? null : sqlDataReader["CompletedDate"].ToString());
+                    musicSheet.PdfFileName = sqlDataReader["PdfFileName"].ToString();
+
+                    
+                    // Tuesday 6/13/23 7:08PM: attempting to define baseUrl while troubleshooting empty links (didn't work)
+                    // baseUrl = "http://localhost:5057/";
+
+                    // dynamic URL
+                    musicSheet.SongUrl = baseUrl + "\\pdfs\\" + musicSheet.PdfFileName;
 
                     musicSheets.Add(musicSheet);
                }
@@ -59,11 +101,13 @@ namespace webapi_01
                return musicSheets;
           }
 
+
+
           public static List<MusicSheet> SearchMusicSheets(SqlConnection sqlConnection, string search = "", int pageSize = 10, int pageNumber = 1)
           {
                List<MusicSheet> musicSheets = new List<MusicSheet>();
 
-               string sql = "select p.MusicSheetID, e.SongTitle, e.StartDate, e.CompletedDate, p.[Count] from (select MusicSheetID, count(*) over () AS [Count] from MusicSheet where StartDate like '%' + @Search + '%' or SongTitle like '%' + @Search + '%' order by MusicSheetId offset @PageSize * (@PageNumber - 1) rows fetch next @PageSize rows only) p join MusicSheet e on p.MusicSheetId = e.MusicSheetId order by 1;";
+               string sql = "select p.MusicSheetID, e.SongTitle, e.StartDate, e.CompletedDate, e.PdfFileName, p.[Count] from (select MusicSheetID, count(*) over () AS [Count] from MusicSheet where StartDate like '%' + @Search + '%' or SongTitle like '%' + @Search + '%' order by MusicSheetId offset @PageSize * (@PageNumber - 1) rows fetch next @PageSize rows only) p join MusicSheet e on p.MusicSheetId = e.MusicSheetId order by 1;";
 
                SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
                sqlCommand.CommandType = System.Data.CommandType.Text;
@@ -90,6 +134,9 @@ namespace webapi_01
                     musicSheet.SongTitle = sqlDataReader["SongTitle"].ToString();
                     musicSheet.StartDate = Convert.ToDateTime(sqlDataReader["StartDate"].ToString() == "" ? null : sqlDataReader["StartDate"].ToString());
                     musicSheet.CompletedDate = Convert.ToDateTime(sqlDataReader["CompletedDate"].ToString() == "" ? null : sqlDataReader["CompletedDate"].ToString());
+
+                    //added 12:31pm 6/14/23
+                    musicSheet.PdfFileName = sqlDataReader["PdfFileName"].ToString();
 
                     musicSheets.Add(musicSheet);
                }

@@ -69,19 +69,83 @@ function webapp_02() {
 
 
 
+    // initial showMusicSheets method as of 6/12/23 5:38 PM:
+
+    // function showMusicSheets(musicSheets) {
+    //     var musicSheetTableText = '<table class="table table-striped table-sm"><thead><tr><th scope="col">Music Sheet ID</th><th scope="col">Song Title</th><th scope="col">Start Date</th><th scope="col">Completed Date</th></tr></thead><tbody>';
+
+    //     for (var i = 0; i < musicSheets.length; i++) {
+    //         var musicSheet = musicSheets[i];
+
+    //         musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td>' + musicSheet.songTitle + '</td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
+    //     }
+
+    //     musicSheetTableText = musicSheetTableText + '</tbody></table>';
+
+    //     musicSheetTable.innerHTML = musicSheetTableText;
+    // }
+
+
+
+    // under construction showMusicSheets method below:
+
+
+
     function showMusicSheets(musicSheets) {
         var musicSheetTableText = '<table class="table table-striped table-sm"><thead><tr><th scope="col">Music Sheet ID</th><th scope="col">Song Title</th><th scope="col">Start Date</th><th scope="col">Completed Date</th></tr></thead><tbody>';
 
         for (var i = 0; i < musicSheets.length; i++) {
             var musicSheet = musicSheets[i];
 
-            musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td>' + musicSheet.songTitle + '</td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
+            // initial # placeholder below:
+
+            // musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td><a href="#" class="song-link" data-id"' + musicSheet.musicSheetId + '">' + musicSheet.songTitle + '</a></td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
+
+            // Tuesday 6/13/23 7:37PM: replacing the 'href="#"' attempt:
+
+            // musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td><a href="D:\\HarmonyApp\\HarmonyApp\\pdfs\\' + musicSheet.pdfFileName + '" class="song-link" data-id="' + musicSheet.musicSheetId + '">' + musicSheet.songTitle + '</a></td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
+
+
+            //2nd attempt, direct PDF file link:
+            // okay the link goes directly to the Ode to Joy PDF but it still doesn't work
+
+
+            // musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td><a href="D:/HarmonyApp/HarmonyApp/pdfs/8-ode-to-joy.pdf" class="song-link" data-id="' + musicSheet.musicSheetId + '">' + musicSheet.songTitle + '</a></td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
+
+
+            // 3rd attempt: removing local folders
+
+            musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td><a href="http://localhost:5057/pdfs/'+ musicSheet.pdfFileName +'.pdf" target="_blank" class="song-links" data-id="' + musicSheet.musicSheetId + '">' + musicSheet.songTitle + '</a></td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
+
+
+
+
         }
 
         musicSheetTableText = musicSheetTableText + '</tbody></table>';
 
         musicSheetTable.innerHTML = musicSheetTableText;
+
+
+        // Song Link Event Listener
+        // removed Wednesday 6/14/23 1:20pm
+
+
+        // var songLinks = document.getElementsByClassName('song-link');
+        // for (var j = 0; j < songLinks.length; j++) {
+        //     songLinks[j].addEventListener('click', onSongLinkClick);
+        // }
     }
+
+    // Song Link Click Event Listener
+    // removed Wednesday 6/14/23 1:20pm
+
+    // function onSongLinkClick(event) {
+    //     console.log('')
+    //     event.preventDefault();
+    //     var musicSheetId = event.target.getAttribute('data-id');
+    //     console.log('Song link linked! Music Sheet ID:', musicSheetId);
+    // }
 
 
 

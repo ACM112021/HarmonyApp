@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8Whx5Jmciod92wQ2uSzKEu4IWtXPwgU5B2qWsv2VcKE=",
+  "Hash": "dVJqYH9DpgGT+sMS3inBDzM8uVDadrV4V975umjoJGg=",
   "Source": "webbapp_01",
   "BasePath": "_content/webbapp_01",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.js"
+    },
+    {
+      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\pdfs\\8-ode-to-joy.pdf",
+      "SourceId": "webbapp_01",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "BasePath": "_content/webbapp_01",
+      "RelativePath": "pdfs/8-ode-to-joy.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pdfs\\8-ode-to-joy.pdf"
     }
   ]
 }

@@ -24,6 +24,10 @@ public class MusicSheetController : ControllerBase
         _logger = logger;
     }
 
+    
+
+    
+
     [HttpGet]
     [Route("/SearchMusicSheets")]
     public Response SearchMusicSheets(string pageSize = "10", string pageNumber = "1", string search = "")
@@ -39,6 +43,7 @@ public class MusicSheetController : ControllerBase
                 sqlConnection.Open();
                 musicSheets = MusicSheet.SearchMusicSheets(sqlConnection, search, Convert.ToInt32(pageSize), Convert.ToInt32(pageNumber));
             }
+
 
             string message = "";
 
@@ -70,11 +75,6 @@ public class MusicSheetController : ControllerBase
 
 
 
- // here @ Friday 6/9/23 9:31pm
-
-
-
-
 
 
 
@@ -89,6 +89,8 @@ public class MusicSheetController : ControllerBase
             List<MusicSheet> musicSheets = new List<MusicSheet>();
 
 
+
+            // Tuesday 6/13/23 6:26PM: Maybe in order to fix the `0000` date displayed, maybe we could change `null` to "in progress" or something. Wait until PDF file hosting is setup. Check the 'null's in the InsertMusicSheet method in SheetMusic.cs as well. Change may ONLY be needed in the SheetMusic.cs part: if 'null' = "in progress"? We'll see. MAYBE MAYBE even just the display in index.js, line 145..nvm that didn't work.
 
             MusicSheet musicSheet = new MusicSheet(
                 songTitle == "" ? null : songTitle, 
@@ -220,6 +222,40 @@ public class MusicSheetController : ControllerBase
 
         return response;
     }
+
+
+
+    // GET PDF Method
+
+    [HttpGet]
+    [Route("{id}/pdfs")]
+    public IActionResult GetMusicSheetPdf(int id)
+    {
+        try
+        {
+           // File path based on the provided identifier (id)
+            string filePath = $"D:\\HarmonyApp\\HarmonyApp\\pdfs\\{id}.pdf";
+
+            // Assuming you have the path to the PDF file, you can read it as bytes
+            byte[] pdfBytes = System.IO.File.ReadAllBytes("D:\\HarmonyApp\\HarmonyApp\\pdfs\\{id}.pdf");
+
+            // Return the PDF file as the response
+            return File(pdfBytes, "application/pdf");
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, "Error while retrieving the PDF file");
+            return StatusCode(500, "Error while retrieving the PDF file");
+        }
+    }
+    
+
+
+
+
+
+
+
 
     static string GetConnectionString()
     {
