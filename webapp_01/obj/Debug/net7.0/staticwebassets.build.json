@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dVJqYH9DpgGT+sMS3inBDzM8uVDadrV4V975umjoJGg=",
+  "Hash": "RJWkwSkSKN+tr7V1gVMQ66ukPxrVDtuyOBncEBNsxyA=",
   "Source": "webbapp_01",
   "BasePath": "_content/webbapp_01",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "webbapp_01\\wwwroot",
       "Source": "webbapp_01",
-      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\",
       "BasePath": "_content/webbapp_01",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\favicon.ico",
+      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\favicon.ico",
       "SourceId": "webbapp_01",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\",
       "BasePath": "_content/webbapp_01",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\index.css",
+      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\index.css",
       "SourceId": "webbapp_01",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\",
       "BasePath": "_content/webbapp_01",
       "RelativePath": "index.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\index.css"
     },
     {
-      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\index.html",
+      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\index.html",
       "SourceId": "webbapp_01",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\",
       "BasePath": "_content/webbapp_01",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\index.js",
+      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\index.js",
       "SourceId": "webbapp_01",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\",
       "BasePath": "_content/webbapp_01",
       "RelativePath": "index.js",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\index.js"
     },
     {
-      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\pdfs\\8-ode-to-joy.pdf",
+      "Identity": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\8-ode-to-joy.pdf",
       "SourceId": "webbapp_01",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\",
+      "ContentRoot": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\",
       "BasePath": "_content/webbapp_01",
       "RelativePath": "pdfs/8-ode-to-joy.pdf",
       "AssetKind": "All",

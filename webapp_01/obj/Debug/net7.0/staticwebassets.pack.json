@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\favicon.ico",
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\index.css",
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\index.css",
       "PackagePath": "staticwebassets\\index.css"
     },
     {
-      "Id": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\index.html",
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\index.js",
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\index.js",
       "PackagePath": "staticwebassets\\index.js"
     },
     {
-      "Id": "D:\\HarmonyApp\\HarmonyApp\\webbapp_01\\wwwroot\\pdfs\\8-ode-to-joy.pdf",
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\8-ode-to-joy.pdf",
       "PackagePath": "staticwebassets\\pdfs\\8-ode-to-joy.pdf"
     },
     {
