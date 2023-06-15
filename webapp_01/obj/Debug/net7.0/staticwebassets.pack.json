@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\index.js"
     },
     {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\23-morning-mood.pdf",
+      "PackagePath": "staticwebassets\\pdfs\\23-morning-mood.pdf"
+    },
+    {
       "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\8-ode-to-joy.pdf",
       "PackagePath": "staticwebassets\\pdfs\\8-ode-to-joy.pdf"
     },

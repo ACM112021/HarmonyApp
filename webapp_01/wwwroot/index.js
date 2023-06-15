@@ -120,7 +120,7 @@ function webapp_02() {
 
             // 3rd attempt: moved pdfs folder to wwwroot
 
-            musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td><a href="http://localhost:5057/pdfs/'+ musicSheet.pdfFileName +'.pdf" target="_blank" class="song-links" data-id="' + musicSheet.musicSheetId + '">' + musicSheet.songTitle + '</a></td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
+            musicSheetTableText = musicSheetTableText + '<tr><th scope="row">' + musicSheet.musicSheetId + '</th><td><a href="http://localhost:5057/pdfs/' + musicSheet.pdfFileName +'.pdf" target="_blank" class="song-links" data-id="' + musicSheet.musicSheetId + '">' + musicSheet.songTitle + '</a></td><td>' + musicSheet.startDate + '</td><td>' + musicSheet.completedDate + '</td></tr>';
 
 
 
