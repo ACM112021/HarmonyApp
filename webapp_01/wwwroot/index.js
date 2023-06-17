@@ -8,6 +8,14 @@ function webapp_02() {
     var anchorNavPayments = document.getElementById("anchor-nav-payments");
     // Nav Bar End
 
+    // Pages
+
+    var pageSheetMusic = document.getElementById("page-sheet-music");
+    var pageDiscussion = document.getElementById("page-discussion");
+    var pagePayments = document.getElementById("page-payments");
+
+    // Pages end
+
     var textSearchMusicSheets = document.getElementById("text-search-music-sheets");
 
     var buttonSearchMusicSheets = document.getElementById("button-search-music-sheets");
@@ -57,15 +65,24 @@ function webapp_02() {
     // Functions
 
     function handleClickAnchorNavSheetMusic(e) {
-        alert("You clicked Sheet Music!")
+        pageSheetMusic.classList.remove("visually-hidden");
+        pageDiscussion.classList.add("visually-hidden");
+        pagePayments.classList.add("visually-hidden");
+        e.preventDefault();
     }
 
     function handleClickAnchorNavDiscussion(e) {
-        alert("You clicked Discussion!")
+        pageSheetMusic.classList.add("visually-hidden");
+        pageDiscussion.classList.remove("visually-hidden");
+        pagePayments.classList.add("visually-hidden");
+        e.preventDefault();
     }
 
     function handleClickAnchorNavPayments(e) {
-        alert("You clicked Payments!")
+        pageSheetMusic.classList.add("visually-hidden");
+        pageDiscussion.classList.add("visually-hidden");
+        pagePayments.classList.remove("visually-hidden");
+        e.preventDefault();
     }
 
 
