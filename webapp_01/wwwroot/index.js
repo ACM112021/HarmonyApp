@@ -4,14 +4,14 @@ function webapp_02() {
 
     // Nav Bar Elements first
     var anchorNavSheetMusic = document.getElementById("anchor-nav-sheet-music");
-    var anchorNavDiscussion = document.getElementById("anchor-nav-discussion");
+    var anchorNavTutorials = document.getElementById("anchor-nav-tutorials");
     var anchorNavPayments = document.getElementById("anchor-nav-payments");
     // Nav Bar End
 
     // Pages
 
     var pageSheetMusic = document.getElementById("page-sheet-music");
-    var pageDiscussion = document.getElementById("page-discussion");
+    var pageTutorials = document.getElementById("page-tutorials");
     var pagePayments = document.getElementById("page-payments");
 
     // Pages end
@@ -43,7 +43,7 @@ function webapp_02() {
 
     // Nav Bar Listeners first
     anchorNavSheetMusic.addEventListener("click", handleClickAnchorNavSheetMusic);
-    anchorNavDiscussion.addEventListener("click", handleClickAnchorNavDiscussion);
+    anchorNavTutorials.addEventListener("click", handleClickAnchorNavTutorials);
     anchorNavPayments.addEventListener("click", handleClickAnchorNavPayments);
     // Nav Bar Listeners end
 
@@ -75,9 +75,9 @@ function webapp_02() {
         e.preventDefault();
     }
 
-    function handleClickAnchorNavDiscussion(e) {
-        window.history.pushState({}, "", "/" + "discussion");
-        showPage("discussion");
+    function handleClickAnchorNavTutorials(e) {
+        window.history.pushState({}, "", "/" + "tutorials");
+        showPage("tutorials");
         e.preventDefault();
     }
 
@@ -90,15 +90,15 @@ function webapp_02() {
     function showPage(page) {
         if (page.toLowerCase() === "sheetmusic" || page === "") {
             pageSheetMusic.classList.remove("visually-hidden");
-            pageDiscussion.classList.add("visually-hidden");
+            pageTutorials.classList.add("visually-hidden");
             pagePayments.classList.add("visually-hidden");
-        } else if (page.toLowerCase() === "discussion") {
+        } else if (page.toLowerCase() === "tutorials") {
             pageSheetMusic.classList.add("visually-hidden");
-            pageDiscussion.classList.remove("visually-hidden");
+            pageTutorials.classList.remove("visually-hidden");
             pagePayments.classList.add("visually-hidden");
         } else if (page.toLowerCase() === "payments") {
             pageSheetMusic.classList.add("visually-hidden");
-            pageDiscussion.classList.add("visually-hidden");
+            pageTutorials.classList.add("visually-hidden");
             pagePayments.classList.remove("visually-hidden");
         }
     }
