@@ -43,118 +43,125 @@
     </div>
 
 
-    <!-- adding ID below to allow for separate Sheet Music and Discussion page -->
+
 
     <!-- Sheet Music Page -->
-    <div id="page-sheet-music" class="row">
+    <div id="page-sheet-music">
 
-        <div class="col-12 page-title">
-            <h3>Sheet Music</h3>
+        <div class="row">
+            <div class="col-12 page-title">
+                <h1>Sheet Music</h1>
+            </div>
         </div>
 
-        <!-- Ode to Joy file path test -->
+        <div class="row">
 
-        <a href="http://localhost:5057/pdfs/8-ode-to-joy.pdf" target="_blank" data-id="12">test</a>
+            <!-- Ode to Joy file path test -->
+
+            <!-- <a href="http://localhost:5057/pdfs/8-ode-to-joy.pdf" target="_blank" data-id="12">test</a> -->
 
 
-        <div class="col col-12 col-music-sheet-table">
-            <div id="music-sheet-table"></div>
+            <div class="col col-12 col-music-sheet-table">
+                <div id="music-sheet-table"></div>
+            </div>
         </div>
 
-        <div class="col col-12 my-right">
-            <form class="row mb-2 g-2">
-                <div class="col-9">
-                    <input id="text-search-music-sheets" type="text" class="form-control">
-                </div>
-                <div class="col-auto">
-                    <button id="button-search-music-sheets" type="button" class="btn btn-primary">Search</button>
-                </div>
-                <div class="col-auto">
-                    <button id="button-search-clear-music-sheets" type="button" class="btn btn-primary">Clear</button>
-                </div>
-            </form>
+        <div class="row">
+            <div class="col col-12 my-right">
+                <form class="row mb-2 g-2">
+                    <div class="col-9">
+                        <input id="text-search-music-sheets" type="text" class="form-control">
+                    </div>
+                    <div class="col-auto">
+                        <button id="button-search-music-sheets" type="button" class="btn btn-primary">Search</button>
+                    </div>
+                    <div class="col-auto">
+                        <button id="button-search-clear-music-sheets" type="button"
+                            class="btn btn-primary">Clear</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        
-    </div>
 
-    <div class="row row-insert-update-delete">
+        <div class="row row-insert-update-delete">
 
-        <div class="col col-4">
-            <h4>Insert</h4>
-            <form>
-                <div class="mb-2">
-                    <label for="text-insert-song-title" class="form-label">Song Title</label>
-                    <input id="text-insert-song-title" type="text" class="form-control">
-                </div>
-                <div class="mb-2">
-                    <label for="text-insert-start-date" class="form-label">Start Date</label>
-                    <input id="text-insert-start-date" type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label for="text-insert-completed-date" class="form-label">Completed Date</label>
-                    <input id="text-insert-completed-date" type="text" class="form-control">
-                </div>
-                <div class="row mb-2 g-2">
-                    <div class="col-auto">
-                        <button id="button-insert-music-sheet" type="button" class="btn btn-primary">Insert</button>
+            <div class="col col-4">
+                <h4>Insert</h4>
+                <form>
+                    <div class="mb-2">
+                        <label for="text-insert-song-title" class="form-label">Song Title</label>
+                        <input id="text-insert-song-title" type="text" class="form-control">
                     </div>
-                    <div class="col-auto">
-                        <button id="button-insert-music-sheet-cancel" type="button"
-                            class="btn btn-primary">Cancel</button>
+                    <div class="mb-2">
+                        <label for="text-insert-start-date" class="form-label">Start Date</label>
+                        <input id="text-insert-start-date" type="text" class="form-control">
                     </div>
-                </div>
-            </form>
-        </div>
+                    <div class="mb-3">
+                        <label for="text-insert-completed-date" class="form-label">Completed Date</label>
+                        <input id="text-insert-completed-date" type="text" class="form-control">
+                    </div>
+                    <div class="row mb-2 g-2">
+                        <div class="col-auto">
+                            <button id="button-insert-music-sheet" type="button" class="btn btn-primary">Insert</button>
+                        </div>
+                        <div class="col-auto">
+                            <button id="button-insert-music-sheet-cancel" type="button"
+                                class="btn btn-primary">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
-        <div class="col col-4">
-            <h4>Update</h4>
-            <form>
-                <div class="mb-2">
-                    <label for="text-update-music-sheet-id" class="form-label">Music Sheet ID</label>
-                    <input id="text-update-music-sheet-id" type="text" class="form-control">
-                </div>
-                <div class="mb-2">
-                    <label for="text-update-song-title" class="form-label">Song Title</label>
-                    <input id="text-update-song-title" type="text" class="form-control">
-                </div>
-                <div class="mb-2">
-                    <label for="text-update-start-date" class="form-label">Start Date</label>
-                    <input id="text-update-start-date" type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label for="text-update-completed-date" class="form-label">Completed Date</label>
-                    <input id="text-update-completed-date" type="text" class="form-control">
-                </div>
-                <div class="row mb-2 g-2">
-                    <div class="col-auto">
-                        <button id="button-update-music-sheet" type="button" class="btn btn-primary">Update</button>
+            <div class="col col-4">
+                <h4>Update</h4>
+                <form>
+                    <div class="mb-2">
+                        <label for="text-update-music-sheet-id" class="form-label">Music Sheet ID</label>
+                        <input id="text-update-music-sheet-id" type="text" class="form-control">
                     </div>
-                    <div class="col-auto">
-                        <button id="button-update-music-sheet-cancel" type="button"
-                            class="btn btn-primary">Cancel</button>
+                    <div class="mb-2">
+                        <label for="text-update-song-title" class="form-label">Song Title</label>
+                        <input id="text-update-song-title" type="text" class="form-control">
                     </div>
-                </div>
-            </form>
-        </div>
+                    <div class="mb-2">
+                        <label for="text-update-start-date" class="form-label">Start Date</label>
+                        <input id="text-update-start-date" type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text-update-completed-date" class="form-label">Completed Date</label>
+                        <input id="text-update-completed-date" type="text" class="form-control">
+                    </div>
+                    <div class="row mb-2 g-2">
+                        <div class="col-auto">
+                            <button id="button-update-music-sheet" type="button" class="btn btn-primary">Update</button>
+                        </div>
+                        <div class="col-auto">
+                            <button id="button-update-music-sheet-cancel" type="button"
+                                class="btn btn-primary">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
-        <div class="col col-4">
-            <h4>Delete</h4>
-            <form>
-                <div class="mb-3">
-                    <label for="text-delete-music-sheet-id" class="form-label">Music Sheet ID</label>
-                    <input id="text-delete-music-sheet-id" type="text" class="form-control">
-                </div>
-                <div class="row mb-2 g-2">
-                    <div class="col-auto">
-                        <button id="button-delete-music-sheet" type="button" class="btn btn-primary">Delete</button>
+            <div class="col col-4">
+                <h4>Delete</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="text-delete-music-sheet-id" class="form-label">Music Sheet ID</label>
+                        <input id="text-delete-music-sheet-id" type="text" class="form-control">
                     </div>
-                    <div class="col-auto">
-                        <button id="button-delete-music-sheet-cancel" type="button"
-                            class="btn btn-primary">Cancel</button>
+                    <div class="row mb-2 g-2">
+                        <div class="col-auto">
+                            <button id="button-delete-music-sheet" type="button" class="btn btn-primary">Delete</button>
+                        </div>
+                        <div class="col-auto">
+                            <button id="button-delete-music-sheet-cancel" type="button"
+                                class="btn btn-primary">Cancel</button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -174,7 +181,7 @@
     <div id="page-discussion" class="row visually-hidden">
 
         <div class="col-12 page-title">
-            <h3>Discussion</h3>
+            <h1>Discussion</h1>
         </div>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
@@ -571,7 +578,7 @@
     <div id="page-payments" class="row visually-hidden">
 
         <div class="col-12 page-title">
-            <h3>Payments</h3>
+            <h1>Payments</h1>
         </div>
     </div>
 
