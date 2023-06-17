@@ -84,13 +84,15 @@ namespace webapi_01
 
                     musicSheet.MusicSheetId = Convert.ToInt32(sqlDataReader["MusicSheetId"].ToString());
                     musicSheet.SongTitle = sqlDataReader["SongTitle"].ToString();
+
+
                     musicSheet.StartDate = Convert.ToDateTime(sqlDataReader["StartDate"].ToString() == "" ? null : sqlDataReader["StartDate"].ToString());
+
                     musicSheet.CompletedDate = Convert.ToDateTime(sqlDataReader["CompletedDate"].ToString() == "" ? null : sqlDataReader["CompletedDate"].ToString());
+
+
                     musicSheet.PdfFileName = sqlDataReader["PdfFileName"].ToString();
 
-                    
-                    // Tuesday 6/13/23 7:08PM: attempting to define baseUrl while troubleshooting empty links (didn't work)
-                    // baseUrl = "http://localhost:5057/";
 
                     // dynamic URL
                     musicSheet.SongUrl = baseUrl + "\\pdfs\\" + musicSheet.PdfFileName;
@@ -133,7 +135,10 @@ namespace webapi_01
                     musicSheet.SongTitle = sqlDataReader["SongTitle"].ToString();
                     // duplicate below? 6/15/23 7:09PM
                     musicSheet.SongTitle = sqlDataReader["SongTitle"].ToString();
+
+                    
                     musicSheet.StartDate = Convert.ToDateTime(sqlDataReader["StartDate"].ToString() == "" ? null : sqlDataReader["StartDate"].ToString());
+                    
                     musicSheet.CompletedDate = Convert.ToDateTime(sqlDataReader["CompletedDate"].ToString() == "" ? null : sqlDataReader["CompletedDate"].ToString());
 
                     //added 12:31pm 6/14/23
