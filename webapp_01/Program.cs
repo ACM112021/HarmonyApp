@@ -20,7 +20,7 @@ app.UseDefaultFiles();
 
 
 
-// adding page name redirect code below (6/17/23 12:03PM):
+// adding page name redirect code below, "add rewrite" (6/17/23 12:03PM):
 
 app.Use(async (context, next) =>
 {
