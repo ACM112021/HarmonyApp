@@ -38,3 +38,7 @@ form {
     padding-right: 10px;
 }
 
+.page-title {
+    background-color: lightgray;
+    text-align: center;
+}

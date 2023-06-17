@@ -20,11 +20,43 @@
 
     <div class="container">
 
-        <div class="row">
+        <div class="row my-header">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-lg-start mb-md-0">
+                <li>
+                    <a id="anchor-nav-sheet-music" href="#" class="nav-link px-2 link-body-emphasis">
+                        Sheet Music
+                    </a>
+                </li>
+
+                <li>
+                    <a id="anchor-nav-discussion" href="#" class="nav-link px-2 link-body-emphasis">
+                        Discussion
+                    </a>
+                </li>
+
+                <li>
+                    <a id="anchor-nav-payments" href="#" class="nav-link px-2 link-body-emphasis">
+                        Payments
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+
+        <!-- adding ID below to allow for separate Sheet Music and Discussion page -->
+
+        <!-- Sheet Music Page -->
+        <div id="page-sheet-music" class="row">
+
+            <div class="col-12 page-title">
+                <h3>Sheet Music</h3>
+            </div>
 
             <!-- Ode to Joy file path test -->
             
             <a href="http://localhost:5057/pdfs/8-ode-to-joy.pdf" target="_blank" data-id="12">test</a>
+
 
             <div class="col col-8 col-music-sheet-table">
                 <div id="music-sheet-table"></div>
@@ -123,6 +155,28 @@
             </div>
 
         </div>
+
+
+
+        <!-- Discussion Page -->
+        <div id="page-discussion" class="row visually-hidden">
+
+            <div class="col-12 page-title">
+                <h3>Discussion</h3>
+            </div>
+        </div>
+
+
+        <!-- Payments Page -->
+        <div id="page-payments" class="row visually-hidden">
+
+            <div class="col-12 page-payments">
+                <h3>Payments</h3>
+            </div>
+        </div>
+
+
+
 
         <div class="row my-footer">
             <div class="col col-12">

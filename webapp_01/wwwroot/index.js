@@ -2,6 +2,12 @@ function webapp_02() {
 
     // Music Sheet elements
 
+    // Nav Bar Elements first
+    var anchorNavSheetMusic = document.getElementById("anchor-nav-sheet-music");
+    var anchorNavDiscussion = document.getElementById("anchor-nav-discussion");
+    var anchorNavPayments = document.getElementById("anchor-nav-payments");
+    // Nav Bar End
+
     var textSearchMusicSheets = document.getElementById("text-search-music-sheets");
 
     var buttonSearchMusicSheets = document.getElementById("button-search-music-sheets");
@@ -23,6 +29,13 @@ function webapp_02() {
 
     // Music Sheet event listeners
 
+
+    // Nav Bar Listeners first
+    anchorNavSheetMusic.addEventListener("click", handleClickAnchorNavSheetMusic);
+    anchorNavDiscussion.addEventListener("click", handleClickAnchorNavDiscussion);
+    anchorNavPayments.addEventListener("click", handleClickAnchorNavPayments);
+    // Nav Bar Listeners end
+
     buttonSearchMusicSheets.addEventListener("click", searchMusicSheets);
     buttonSearchClearMusicSheets.addEventListener("click", searchClear);
 
@@ -34,6 +47,26 @@ function webapp_02() {
 
     buttonUpdateMusicSheet.addEventListener("click", updateMusicSheet);
     buttonUpdateMusicSheetCancel.addEventListener("click", updateMusicSheetCancel);
+
+
+
+
+
+
+
+    // Functions
+
+    function handleClickAnchorNavSheetMusic(e) {
+        alert("You clicked Sheet Music!")
+    }
+
+    function handleClickAnchorNavDiscussion(e) {
+        alert("You clicked Discussion!")
+    }
+
+    function handleClickAnchorNavPayments(e) {
+        alert("You clicked Payments!")
+    }
 
 
 
