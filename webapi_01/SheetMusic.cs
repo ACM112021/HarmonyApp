@@ -4,7 +4,6 @@ using System.Data.SqlClient;
 
 
 
-// started updating Friday 6/9/23 6:36pm
 
 
 namespace webapi_01
@@ -13,6 +12,7 @@ namespace webapi_01
      {
           public int MusicSheetId { get; set; }
           public string? SongTitle { get; set; }
+
           public DateTime? StartDate { get; set; }
           public DateTime? CompletedDate { get; set; }
 
@@ -131,6 +131,7 @@ namespace webapi_01
 
                     musicSheet.MusicSheetId = Convert.ToInt32(sqlDataReader["MusicSheetId"].ToString());
                     musicSheet.SongTitle = sqlDataReader["SongTitle"].ToString();
+                    // duplicate below? 6/15/23 7:09PM
                     musicSheet.SongTitle = sqlDataReader["SongTitle"].ToString();
                     musicSheet.StartDate = Convert.ToDateTime(sqlDataReader["StartDate"].ToString() == "" ? null : sqlDataReader["StartDate"].ToString());
                     musicSheet.CompletedDate = Convert.ToDateTime(sqlDataReader["CompletedDate"].ToString() == "" ? null : sqlDataReader["CompletedDate"].ToString());
@@ -152,10 +153,60 @@ namespace webapi_01
 
 
 
+          // attempting to remove time portion from date fields 6/15/23 5:34PM, initial code below
+
+
+          // public static int InsertMusicSheet(MusicSheet musicSheet, SqlConnection sqlConnection)
+          // {
+          //      string sql = "insert into MusicSheet(SongTitle, StartDate, CompletedDate) values (@SongTitle, @StartDate, @CompletedDate);";
+
+          //      SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
+          //      sqlCommand.CommandType = System.Data.CommandType.Text;
+
+          //      SqlParameter paramSongTitle = new SqlParameter("@SongTitle", musicSheet.SongTitle);
+          //      SqlParameter paramStartDate = new SqlParameter("@StartDate", musicSheet.StartDate);
+          //      SqlParameter paramCompletedDate = new SqlParameter("@CompletedDate", musicSheet.CompletedDate == null ? (object)DBNull.Value : musicSheet.CompletedDate);
+
+
+          //      // if (musicSheet.CompletedDate == null)
+          //      // {
+          //      //      paramCompletedDate = new SqlParameter("@CompletedDate", DBNull.Value);
+          //      // }
+          //      // else
+          //      // {
+          //      //      paramCompletedDate = new SqlParameter("@CompletedDate", musicSheet.CompletedDate);
+          //      // }
+
+
+          //      //   if (musicSheet.CompletedDate == "")
+          //      //   {
+          //      //      paramCompletedDate =  new SqlParameter("@CompletedDate", System.Data.DbType.Date);
+          //      //   }
+
+          //      paramSongTitle.DbType = System.Data.DbType.String;
+          //      paramStartDate.DbType = System.Data.DbType.DateTime;
+          //      paramCompletedDate.DbType = System.Data.DbType.DateTime;
+
+          //      sqlCommand.Parameters.Add(paramSongTitle);
+          //      sqlCommand.Parameters.Add(paramStartDate);
+          //      sqlCommand.Parameters.Add(paramCompletedDate);
+
+          //      int rowsAffected = sqlCommand.ExecuteNonQuery();
+          //      return rowsAffected;
+          // }
 
 
 
-          public static int InsertMusicSheet(MusicSheet musicSheet, SqlConnection sqlConnection)
+
+
+          // (this new code doesn't break the app, but doesn't remove the time portion like we want. same functionality as before.)
+          // attempting to remove time portion from date fields 6/15/23 5:34PM, new code below:
+
+
+
+
+
+     public static int InsertMusicSheet(MusicSheet musicSheet, SqlConnection sqlConnection)
           {
                string sql = "insert into MusicSheet(SongTitle, StartDate, CompletedDate) values (@SongTitle, @StartDate, @CompletedDate);";
 
@@ -163,8 +214,8 @@ namespace webapi_01
                sqlCommand.CommandType = System.Data.CommandType.Text;
 
                SqlParameter paramSongTitle = new SqlParameter("@SongTitle", musicSheet.SongTitle);
-               SqlParameter paramStartDate = new SqlParameter("@StartDate", musicSheet.StartDate);
-               SqlParameter paramCompletedDate = new SqlParameter("@CompletedDate", musicSheet.CompletedDate == null ? (object)DBNull.Value : musicSheet.CompletedDate);
+               SqlParameter paramStartDate = new SqlParameter("@StartDate", musicSheet.StartDate.Value.Date);
+               SqlParameter paramCompletedDate = new SqlParameter("@CompletedDate", musicSheet.CompletedDate.HasValue ? musicSheet.CompletedDate : (object)DBNull.Value);
 
 
                // if (musicSheet.CompletedDate == null)
@@ -183,8 +234,8 @@ namespace webapi_01
                //   }
 
                paramSongTitle.DbType = System.Data.DbType.String;
-               paramStartDate.DbType = System.Data.DbType.DateTime;
-               paramCompletedDate.DbType = System.Data.DbType.DateTime;
+               paramStartDate.DbType = System.Data.DbType.Date;
+               paramCompletedDate.DbType = System.Data.DbType.Date;
 
                sqlCommand.Parameters.Add(paramSongTitle);
                sqlCommand.Parameters.Add(paramStartDate);
@@ -193,6 +244,17 @@ namespace webapi_01
                int rowsAffected = sqlCommand.ExecuteNonQuery();
                return rowsAffected;
           }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

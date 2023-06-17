@@ -17,12 +17,52 @@
       "PackagePath": "staticwebassets\\index.js"
     },
     {
-      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\23-morning-mood.pdf",
-      "PackagePath": "staticwebassets\\pdfs\\23-morning-mood.pdf"
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\1-ode-to-joy.pdf",
+      "PackagePath": "staticwebassets\\pdfs\\1-ode-to-joy.pdf"
     },
     {
-      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\8-ode-to-joy.pdf",
-      "PackagePath": "staticwebassets\\pdfs\\8-ode-to-joy.pdf"
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\2-morning-mood.pdf",
+      "PackagePath": "staticwebassets\\pdfs\\2-morning-mood.pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\24-fur-elise.pdf",
+      "PackagePath": "staticwebassets\\pdfs\\24-fur-elise.pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\25-god-is-so-good.pdf",
+      "PackagePath": "staticwebassets\\pdfs\\25-god-is-so-good.pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\26-harmony.pdf",
+      "PackagePath": "staticwebassets\\pdfs\\26-harmony.pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\Jingle Bells, Bg Piano 4-29-21[5097].pdf",
+      "PackagePath": "staticwebassets\\pdfs\\Jingle Bells, Bg Piano 4-29-21[5097].pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\Lost Woods Beginner Piano Sheet Music PDF[5095].pdf",
+      "PackagePath": "staticwebassets\\pdfs\\Lost Woods Beginner Piano Sheet Music PDF[5095].pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\MHALL Melody w Names[5090].pdf",
+      "PackagePath": "staticwebassets\\pdfs\\MHALL Melody w Names[5090].pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\Mango Minor 2021[5099].pdf",
+      "PackagePath": "staticwebassets\\pdfs\\Mango Minor 2021[5099].pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\Minecraft Theme Piano[5098].pdf",
+      "PackagePath": "staticwebassets\\pdfs\\Minecraft Theme Piano[5098].pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\Pacabel's Canon Beginner 2021[5100].pdf",
+      "PackagePath": "staticwebassets\\pdfs\\Pacabel's Canon Beginner 2021[5100].pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\Sightreading FEB 21[5094].pdf",
+      "PackagePath": "staticwebassets\\pdfs\\Sightreading FEB 21[5094].pdf"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.webbapp_01.props",
