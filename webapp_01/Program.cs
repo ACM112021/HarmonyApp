@@ -17,6 +17,26 @@ if (!app.Environment.IsDevelopment())
 
 // app.UseHttpsRedirection();
 app.UseDefaultFiles(); 
+
+
+
+// adding page name redirect code below (6/17/23 12:03PM):
+
+app.Use(async (context, next) =>
+{
+    var url = context.Request.Path.Value ?? "";
+    url = url.ToLower();
+
+    if (url.EndsWith("/sheetmusic") || url.EndsWith("/discussion") || url.EndsWith("/payments"))
+    {
+        context.Request.Path = "/index.html";
+    }
+
+    await next();
+});
+
+
+
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -29,6 +49,3 @@ app.Run();
 
 
 
-
-// copied over working application code here, didn't fix
-// Wednesday 6/7/23 9:48am

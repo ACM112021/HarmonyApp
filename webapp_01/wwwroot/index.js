@@ -37,6 +37,9 @@ function webapp_02() {
 
     // Music Sheet event listeners
 
+    //back button:
+    window.addEventListener('popstate', handlePopState);
+
 
     // Nav Bar Listeners first
     anchorNavSheetMusic.addEventListener("click", handleClickAnchorNavSheetMusic);
@@ -64,28 +67,61 @@ function webapp_02() {
 
     // Functions
 
+    // nav bar functions:
+
     function handleClickAnchorNavSheetMusic(e) {
-        pageSheetMusic.classList.remove("visually-hidden");
-        pageDiscussion.classList.add("visually-hidden");
-        pagePayments.classList.add("visually-hidden");
+        window.history.pushState({}, "", "/" + "sheetmusic");
+        showPage("sheetmusic");
         e.preventDefault();
     }
 
     function handleClickAnchorNavDiscussion(e) {
-        pageSheetMusic.classList.add("visually-hidden");
-        pageDiscussion.classList.remove("visually-hidden");
-        pagePayments.classList.add("visually-hidden");
+        window.history.pushState({}, "", "/" + "discussion");
+        showPage("discussion");
         e.preventDefault();
     }
 
     function handleClickAnchorNavPayments(e) {
-        pageSheetMusic.classList.add("visually-hidden");
-        pageDiscussion.classList.add("visually-hidden");
-        pagePayments.classList.remove("visually-hidden");
+        window.history.pushState({}, "", "/" + "payments");
+        showPage("payments");
         e.preventDefault();
     }
 
+    function showPage(page) {
+        if (page.toLowerCase() === "sheetmusic" || page === "") {
+            pageSheetMusic.classList.remove("visually-hidden");
+            pageDiscussion.classList.add("visually-hidden");
+            pagePayments.classList.add("visually-hidden");
+        } else if (page.toLowerCase() === "discussion") {
+            pageSheetMusic.classList.add("visually-hidden");
+            pageDiscussion.classList.remove("visually-hidden");
+            pagePayments.classList.add("visually-hidden");
+        } else if (page.toLowerCase() === "payments") {
+            pageSheetMusic.classList.add("visually-hidden");
+            pageDiscussion.classList.add("visually-hidden");
+            pagePayments.classList.remove("visually-hidden");
+        }
+    }
 
+    function handleNewUrl() {
+        var page = window.location.pathname.split('/')[1];
+
+        if (page === "") {
+            window.history.replaceState({}, "", "/" + "sheetmusic");
+        } else {
+        window.history.replaceState({}, "", "/" + page);
+        }
+
+        showPage(page);
+    }
+
+    // nav bar functions end
+
+
+    function handlePopState() {
+        var page = window.location.pathname.split('/')[1];
+        showPage(page);
+    }
 
 
     function searchMusicSheets() {
@@ -390,9 +426,8 @@ function webapp_02() {
 
 
 
-    //Invoke searchEmployees() on load
-    // searchEmployees();
-
+    //Invoke handleNewUrl() and searchMusicSheets() on load
+    handleNewUrl();
     searchMusicSheets();
 }
 
