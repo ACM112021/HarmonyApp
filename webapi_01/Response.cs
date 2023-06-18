@@ -11,5 +11,7 @@ namespace webapi_01
         public List<Employee>? Employees { get; set; }
 
         public List<MusicSheet>? MusicSheets { get; set; }
+
+        public List<Tutorial>? Tutorials { get; set; }
     }
 }

@@ -1,12 +1,25 @@
 function webapp_02() {
 
-    // Music Sheet elements
+
+
+    //back button:
+    window.addEventListener('popstate', handlePopState);
 
     // Nav Bar Elements first
     var anchorNavSheetMusic = document.getElementById("anchor-nav-sheet-music");
     var anchorNavTutorials = document.getElementById("anchor-nav-tutorials");
     var anchorNavPayments = document.getElementById("anchor-nav-payments");
     // Nav Bar End
+
+
+
+    // Nav Bar Event Listeners first
+    anchorNavSheetMusic.addEventListener("click", handleClickAnchorNavSheetMusic);
+    anchorNavTutorials.addEventListener("click", handleClickAnchorNavTutorials);
+    anchorNavPayments.addEventListener("click", handleClickAnchorNavPayments);
+    // Nav Bar Event Listeners end
+
+
 
     // Pages
 
@@ -15,6 +28,13 @@ function webapp_02() {
     var pagePayments = document.getElementById("page-payments");
 
     // Pages end
+
+
+
+
+
+
+    // Music Sheet elements
 
     var textSearchMusicSheets = document.getElementById("text-search-music-sheets");
 
@@ -36,16 +56,7 @@ function webapp_02() {
 
 
     // Music Sheet event listeners
-
-    //back button:
-    window.addEventListener('popstate', handlePopState);
-
-
-    // Nav Bar Listeners first
-    anchorNavSheetMusic.addEventListener("click", handleClickAnchorNavSheetMusic);
-    anchorNavTutorials.addEventListener("click", handleClickAnchorNavTutorials);
-    anchorNavPayments.addEventListener("click", handleClickAnchorNavPayments);
-    // Nav Bar Listeners end
+    
 
     buttonSearchMusicSheets.addEventListener("click", searchMusicSheets);
     buttonSearchClearMusicSheets.addEventListener("click", searchClear);
@@ -60,6 +71,45 @@ function webapp_02() {
     buttonUpdateMusicSheetCancel.addEventListener("click", updateMusicSheetCancel);
 
 
+
+
+
+
+
+    // Tutorial elements
+
+    // var textSearchTutorials = document.getElementById("text-search-tutorials");
+
+    // var buttonSearchTutorials = document.getElementById("button-search-tutorials");
+    // var buttonSearchClearTutorials = document.getElementById("button-search-clear-tutorials");
+
+    // var tutorialTable = document.getElementById("tutorial-table");
+
+    // var buttonInsertTutorial = document.getElementById("button-insert-tutorial");
+    // var buttonInsertTutorialCancel = document.getElementById("button-insert-tutorial-cancel");
+
+    // var buttonDeleteTutorial = document.getElementById("button-delete-tutorial");
+    // var buttonDeleteTutorialCancel = document.getElementById("button-delete-tutorial-cancel");
+
+    // var buttonUpdateTutorial = document.getElementById("button-update-tutorial");
+    // var buttonUpdateTutorialCancel = document.getElementById("button-update-tutorial-cancel");
+
+
+
+
+    // Tutorial Event Listeners
+
+    // buttonSearchTutorials.addEventListener("click", searchTutorials);
+    // buttonSearchClearTutorials.addEventListener("click", searchClearTutorials);
+
+    // buttonInsertTutorial.addEventListener("click", insertTutorial);
+    // buttonInsertTutorialCancel.addEventListener("click", insertTutorialCancel);
+
+    // buttonDeleteTutorial.addEventListener("click", deleteTutorial);
+    // buttonDeleteTutorialCancel.addEventListener("click", deleteTutorialCancel);
+
+    // buttonUpdateTutorial.addEventListener("click", updateTutorial);
+    // buttonUpdateTutorialCancel.addEventListener("click", updateTutorialCancel);
 
 
 
@@ -118,10 +168,35 @@ function webapp_02() {
     // nav bar functions end
 
 
+
+
+
+    // back button function
+
     function handlePopState() {
         var page = window.location.pathname.split('/')[1];
         showPage(page);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Music Sheet Functions
+
+
+
+
 
 
     function searchMusicSheets() {
@@ -420,6 +495,310 @@ function webapp_02() {
         textMusicSheetId.value = "";
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Tutorial Functions:
+
+
+
+
+    // function searchTutorials() {
+
+    //     var url = 'http://localhost:5174/SearchTutorials?search=' + textSearchTutorials.value;
+
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.onreadystatechange = doAfterSearchTutorials;
+    //     xhr.open('GET', url);
+    //     xhr.send(null);
+
+    //     function doAfterSearchTutorials() {
+    //         var DONE = 4; // readyState 4 means the request is done.
+    //         var OK = 200; // status 200 is a successful return.
+    //         if (xhr.readyState === DONE) {
+    //             if (xhr.status === OK) {
+
+    //                 var response = JSON.parse(xhr.responseText);
+
+    //                 if (response.result === "success") {
+    //                     showTutorials(response.tutorials);
+    //                 } else {
+    //                     alert("API Error: " + response.message);
+    //                 }
+    //             } else {
+    //                 alert("Server Error: " + xhr.status + " " + xhr.statusText);
+    //             }
+    //         }
+    //     };
+    // }
+
+
+
+
+    // function showTutorials(tutorials) {
+    //     var tutorialTableText = '<table class="table table-striped table-sm"><thead><tr><th scope="col">Tutorial ID</th><th scope="col">Title</th><th scope="col">Description</th><th scope="col">Video Link</th></tr></thead><tbody>';
+
+    //     for (var i = 0; i < tutorials.length; i++) {
+    //         var tutorial = tutorials[i];
+
+
+    //         tutorialTableText = tutorialTableText + '<tr><th scope="row">' + tutorial.tutorialId + '</th><td><a href="#" class="song-links" data-id"' + tutorial.tutorialId + '">' + tutorial.title + '</a></td><td>' + tutorial.description + '</td><td>' + tutorial.videoLink + '</td></tr>';
+
+
+
+
+    //     }
+
+    //     tutorialTableText = tutorialTableText + '</tbody></table>';
+
+    //     tutorialTable.innerHTML = tutorialTableText;
+
+
+    // }
+
+
+
+
+
+    // function searchClearTutorials() {
+    //     textSearchTutorials.value = "";
+    //     searchTutorials();
+    // }
+
+
+
+
+    // function insertTutorial() {
+
+    //     var textTitle = document.getElementById("text-insert-tutorial-title");
+    //     var textDescription = document.getElementById("text-insert-description");
+    //     var textVideoLink = document.getElementById("text-insert-video-link");
+
+
+
+    //     // allow null in Video Link 6/17/23 6:40pm
+
+    //     if (!textVideoLink.value) {
+    //         textVideoLink.value = null; 
+    //       }
+
+
+
+    //     var url = 'http://localhost:5174/InsertTutorial?title=' + textTitle.value + '&description=' + textDescription.value + '&videoLink=' + textVideoLink.value;
+
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.onreadystatechange = doAfterInsertTutorial;
+    //     xhr.open('GET', url); 
+    //     xhr.send(null);
+
+    //     function doAfterInsertTutorial() {
+    //         var DONE = 4; // readyState 4 means the request is done.
+    //         var OK = 200; // status 200 is a successful return.
+    //         if (xhr.readyState === DONE) {
+    //             if (xhr.status === OK) {
+
+    //                 var response = JSON.parse(xhr.responseText);
+
+    //                 if (response.result === "success") {
+    //                     showTutorials(response.tutorials);
+    //                 } else {
+    //                     alert("API Error: " + response.message);
+    //                 }
+    //             } else {
+    //                 alert("Server Error: " + xhr.status + " " + xhr.statusText);
+    //             }
+    //         }
+    //     };
+
+    //     textTitle.value = "";
+    //     textDescription.value = "";
+    //     textVideoLink.value = "";
+
+    // };
+
+
+
+    // function insertTutorialCancel() {
+
+    //     var textTitle = document.getElementById("text-insert-tutorial-title");
+    //     var textDescription = document.getElementById("text-insert-tutorial-description");
+    //     var textVideoLink = document.getElementById("text-insert-video-link");
+
+    //     textTitle.value = "";
+    //     textDescription.value = "";
+    //     textVideoLink.value = "";
+
+    // }
+
+
+
+
+
+
+    // function updateTutorial() {
+
+    //     var textTutorialId = document.getElementById("text-update-tutorial-id");
+    //     var textTitle = document.getElementById("text-update-tutorial-title");
+    //     var textDescription = document.getElementById("text-update-tutorial-description");
+    //     var textVideoLink = document.getElementById("text-update-video-link");
+
+    //     var url = 'http://localhost:5174/UpdateTutorial?tutorialid=' + textTutorialId.value + '&title=' + textTitle.value + '&description=' + textDescription.value + '&videoLink=' + textVideoLink.value; 
+
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.onreadystatechange = doAfterUpdateTutorial;
+    //     xhr.open('GET', url);
+    //     xhr.send(null);
+
+    //     function doAfterUpdateTutorial() {
+    //         var DONE = 4; // readyState 4 means the request is done.
+    //         var OK = 200; // status 200 is a successful return.
+    //         if (xhr.readyState === DONE) {
+    //             if (xhr.status === OK) {
+
+    //                 var response = JSON.parse(xhr.responseText);
+
+    //                 if (response.result === "success") {
+    //                     showTutorials(response.tutorials);
+    //                 } else {
+    //                     alert("API Error: " + response.message);
+    //                 }
+    //             } else {
+    //                 alert("Server Error: " + xhr.status + " " + xhr.statusText);
+    //             }
+    //         }
+    //     };
+
+    //     textTutorialId.value = "";
+    //     textTitle.value = "";
+    //     textDescription.value = "";
+    //     textVideoLink.value = "";
+
+    // };
+
+    // function updateTutorialCancel() {
+
+    //     var textTutorialId = document.getElementById("text-update-tutorial-id");
+    //     var textTitle = document.getElementById("text-update-tutorial-title");
+    //     var textDescription = document.getElementById("text-update-tutorial-description");
+    //     var textVideoLink = document.getElementById("text-update-video-link");
+
+    //     textTutorialId.value = "";
+    //     textTitle.value = "";
+    //     textDescription.value = "";
+    //     textVideoLink.value = "";
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // function deleteTutorial() {
+
+    //     var textTutorialId = document.getElementById("text-delete-tutorial-id");
+
+    //     var url = 'http://localhost:5174/DeleteTutorial?tutorialid=' + textTutorialId.value;
+
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.onreadystatechange = doAfterDeleteTutorial;
+    //     xhr.open('GET', url);
+    //     xhr.send(null);
+
+    //     function doAfterDeleteTutorial() {
+    //         var DONE = 4; // readyState 4 means the request is done.
+    //         var OK = 200; // status 200 is a successful return.
+    //         if (xhr.readyState === DONE) {
+    //             if (xhr.status === OK) {
+
+    //                 var response = JSON.parse(xhr.responseText);
+
+    //                 if (response.result === "success") {
+    //                     showTutorials(response.tutorials);
+    //                 } else {
+    //                     alert("API Error: " + response.message);
+    //                 }
+    //             } else {
+    //                 alert("Server Error: " + xhr.status + " " + xhr.statusText);
+    //             }
+    //         }
+    //     };
+
+    //     textTutorialId.value = "";
+
+    // };
+
+    // function deleteTutorialCancel() {
+    //     var textTutorialId = document.getElementById("text-delete-tutorial-id");
+    //     textTutorialId.value = "";
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
@@ -429,9 +808,10 @@ function webapp_02() {
 
 
 
-    //Invoke handleNewUrl() and searchMusicSheets() on load
+    //Invoke handleNewUrl() and searchMusicSheets() on load... and searchTutorials()
     handleNewUrl();
     searchMusicSheets();
+    // searchTutorials();
 }
 
 
