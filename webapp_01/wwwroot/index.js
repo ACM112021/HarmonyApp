@@ -85,14 +85,14 @@ function webapp_02() {
 
     var tutorialTable = document.getElementById("tutorial-table");
 
-    var buttonInsertTutorial = document.getElementById("button-insert-tutorial");
-    var buttonInsertTutorialCancel = document.getElementById("button-insert-tutorial-cancel");
+    // var buttonInsertTutorial = document.getElementById("button-insert-tutorial");
+    // var buttonInsertTutorialCancel = document.getElementById("button-insert-tutorial-cancel");
 
-    var buttonDeleteTutorial = document.getElementById("button-delete-tutorial");
-    var buttonDeleteTutorialCancel = document.getElementById("button-delete-tutorial-cancel");
+    // var buttonDeleteTutorial = document.getElementById("button-delete-tutorial");
+    // var buttonDeleteTutorialCancel = document.getElementById("button-delete-tutorial-cancel");
 
-    var buttonUpdateTutorial = document.getElementById("button-update-tutorial");
-    var buttonUpdateTutorialCancel = document.getElementById("button-update-tutorial-cancel");
+    // var buttonUpdateTutorial = document.getElementById("button-update-tutorial");
+    // var buttonUpdateTutorialCancel = document.getElementById("button-update-tutorial-cancel");
 
 
 
@@ -103,14 +103,14 @@ function webapp_02() {
     buttonSearchTutorials.addEventListener("click", searchTutorials);
     buttonSearchClearTutorials.addEventListener("click", searchClearTutorials);
 
-    buttonInsertTutorial.addEventListener("click", insertTutorial);
-    buttonInsertTutorialCancel.addEventListener("click", insertTutorialCancel);
+    // buttonInsertTutorial.addEventListener("click", insertTutorial);
+    // buttonInsertTutorialCancel.addEventListener("click", insertTutorialCancel);
 
-    buttonDeleteTutorial.addEventListener("click", deleteTutorial);
-    buttonDeleteTutorialCancel.addEventListener("click", deleteTutorialCancel);
+    // buttonDeleteTutorial.addEventListener("click", deleteTutorial);
+    // buttonDeleteTutorialCancel.addEventListener("click", deleteTutorialCancel);
 
-    buttonUpdateTutorial.addEventListener("click", updateTutorial);
-    buttonUpdateTutorialCancel.addEventListener("click", updateTutorialCancel);
+    // buttonUpdateTutorial.addEventListener("click", updateTutorial);
+    // buttonUpdateTutorialCancel.addEventListener("click", updateTutorialCancel);
 
 
 
