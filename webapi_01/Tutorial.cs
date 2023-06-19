@@ -47,7 +47,7 @@ namespace webapi_01
           {
                List<Tutorial> tutorials = new List<Tutorial>();
 
-               string sql = "select TutorialId, Title, Description, VideoLink, PdfFileName from Tutorial;";
+               string sql = "select TutorialId, Title, Description, VideoLink from Tutorial;";
                SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
                sqlCommand.CommandType = System.Data.CommandType.Text;
                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
@@ -83,7 +83,7 @@ namespace webapi_01
           {
                List<Tutorial> tutorials = new List<Tutorial>();
 
-               string sql = "select p.TutorialID, e.Title, e.Description, e.VideoLink, e.PdfFileName, p.[Count] from (select TutorialID, count(*) over () AS [Count] from Tutorial where Description like '%' + @Search + '%' or Title like '%' + @Search + '%' order by TutorialId offset @PageSize * (@PageNumber - 1) rows fetch next @PageSize rows only) p join Tutorial e on p.TutorialId = e.TutorialId order by 1;";
+               string sql = "select p.TutorialID, e.Title, e.Description, e.VideoLink, p.[Count] from (select TutorialID, count(*) over () AS [Count] from Tutorial where Description like '%' + @Search + '%' or Title like '%' + @Search + '%' order by TutorialId offset @PageSize * (@PageNumber - 1) rows fetch next @PageSize rows only) p join Tutorial e on p.TutorialId = e.TutorialId order by 1;";
 
                SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
                sqlCommand.CommandType = System.Data.CommandType.Text;

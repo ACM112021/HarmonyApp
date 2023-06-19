@@ -25,16 +25,16 @@
       "PackagePath": "staticwebassets\\pdfs\\2-morning-mood.pdf"
     },
     {
-      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\24-fur-elise.pdf",
-      "PackagePath": "staticwebassets\\pdfs\\24-fur-elise.pdf"
-    },
-    {
       "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\25-god-is-so-good.pdf",
       "PackagePath": "staticwebassets\\pdfs\\25-god-is-so-good.pdf"
     },
     {
       "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\26-harmony.pdf",
       "PackagePath": "staticwebassets\\pdfs\\26-harmony.pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\8-fur-elise.pdf",
+      "PackagePath": "staticwebassets\\pdfs\\8-fur-elise.pdf"
     },
     {
       "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\Jingle Bells, Bg Piano 4-29-21[5097].pdf",
