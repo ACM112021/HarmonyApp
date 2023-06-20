@@ -570,7 +570,10 @@ function webapp_02() {
             var tutorial = tutorials[i];
 
 
-            tutorialTableText = tutorialTableText + '<tr><th scope="row">' + tutorial.tutorialId + '</th><td><a href="#" class="song-links" data-id"' + tutorial.tutorialId + '">' + tutorial.title + '</a></td><td>' + tutorial.description + '</td><td>' + tutorial.videoLink + '</td></tr>';
+            // tutorialTableText = tutorialTableText + '<tr><th scope="row">' + tutorial.tutorialId + '</th><td><a href="#" class="song-links" data-id"' + tutorial.tutorialId + '">' + tutorial.title + '</a></td><td>' + tutorial.description + '</td><td>' + tutorial.videoLink + '</td></tr>';
+
+
+            tutorialTableText += '<tr><th scope="row">' + tutorial.tutorialId + '</th><td>' + tutorial.title + '</td><td>' + tutorial.description + '</td><td><a href="' + tutorial.videoLink + '" target="_blank">Watch Video</a></td></tr>';
 
 
 
