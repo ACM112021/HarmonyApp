@@ -792,11 +792,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     cashappLogo.addEventListener('click', function() {
-      window.open('https://www.cash.app', '_blank'); // Replace with CashApp payment link
+      window.open('https://cash.app/$ACadeMayes', '_blank'); // Replace with CashApp payment link
     });
   
     metaPayLogo.addEventListener('click', function() {
-      window.open('https://www.apple.com/apple-pay', '_blank'); // Replace with Meta Pay payment link
+      window.open('https://m.me/pay/100008649042546/', '_blank'); // Replace with Meta Pay payment link
     });
 
   });

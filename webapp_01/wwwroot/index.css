@@ -49,10 +49,22 @@ form {
 }
 
 
+
+
+
+
+/* Payments */
+
+
 #payment-options {
     display: flex;
     align-items: center;
 }
+
+
+
+/* Logos */
+
 
 
 .payment-logos-container {
@@ -61,18 +73,16 @@ form {
     justify-content: center;
     margin-bottom: 20px;
     flex-direction: column;
-    margin-left: 225px;
+    align-items: center;
 }
 
 
 
+.payment-logos-container .payment-logo {
+    margin-left: 200px;
+  }
 
 
-
-
-#cashapp-logo {
-    margin-top: 25px;
-}
 
 
 .payment-logo:hover {
@@ -81,8 +91,20 @@ form {
 
 .payment-logo {
     filter: brightness(100%);
-    margin: 10px;
+    margin-right: 50px;
   }
+
+
+#paypal-logo {
+    margin-bottom: 25px;
+}
+
+
+#cashapp-logo {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
 
 .meta-pay-logo {
     filter: brightness(150%);
@@ -93,13 +115,26 @@ form {
 
 
 
+/* QR Codes */
 
 
-.payment-qr {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-}
+
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .qr-code-container .payment-qr {
+    margin-top: 10px;
+  }
+
+
+
+
+
 
 
 
