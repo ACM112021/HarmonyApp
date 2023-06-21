@@ -570,9 +570,6 @@ function webapp_02() {
             var tutorial = tutorials[i];
 
 
-            // tutorialTableText = tutorialTableText + '<tr><th scope="row">' + tutorial.tutorialId + '</th><td><a href="#" class="song-links" data-id"' + tutorial.tutorialId + '">' + tutorial.title + '</a></td><td>' + tutorial.description + '</td><td>' + tutorial.videoLink + '</td></tr>';
-
-
             tutorialTableText += '<tr><th scope="row">' + tutorial.tutorialId + '</th><td>' + tutorial.title + '</td><td>' + tutorial.description + '</td><td><a href="' + tutorial.videoLink + '" target="_blank">Watch Video</a></td></tr>';
 
 
@@ -779,6 +776,31 @@ function webapp_02() {
 
 
 
+    // Payments Getters & Event Listeners:
+
+    // Wait for the document to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Get the payment logos
+    var paypalLogo = document.getElementById('paypal-logo');
+    var cashappLogo = document.getElementById('cashapp-logo');
+    var metaPayLogo = document.getElementById('meta-pay-logo');
+  
+    // Add click event listeners to the payment logos
+    paypalLogo.addEventListener('click', function() {
+      window.open('https://paypal.me/AndrewMayes652?country.x=US&locale.x=en_US', '_blank'); // Replace with PayPal payment link
+    });
+  
+    cashappLogo.addEventListener('click', function() {
+      window.open('https://www.cash.app', '_blank'); // Replace with CashApp payment link
+    });
+  
+    metaPayLogo.addEventListener('click', function() {
+      window.open('https://www.apple.com/apple-pay', '_blank'); // Replace with Meta Pay payment link
+    });
+
+  });
+  
 
 
 

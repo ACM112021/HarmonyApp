@@ -6,8 +6,12 @@ body {
 .my-header,
 .my-footer {
     background-color: darkgray;
-    text-align: center;
+    text-align: left;
     color: white;
+}
+
+.page-title {
+    padding-right: 725px;
 }
 
 .col-music-sheet-table {
@@ -45,7 +49,57 @@ form {
 }
 
 
+#payment-options {
+    display: flex;
+    align-items: center;
+}
 
+
+.payment-logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    margin-left: 225px;
+}
+
+
+
+
+
+
+
+#cashapp-logo {
+    margin-top: 25px;
+}
+
+
+.payment-logo:hover {
+    opacity: 0.5;
+}
+
+.payment-logo {
+    filter: brightness(100%);
+    margin: 10px;
+  }
+
+.meta-pay-logo {
+    filter: brightness(150%);
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+.payment-qr {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
 
 
 

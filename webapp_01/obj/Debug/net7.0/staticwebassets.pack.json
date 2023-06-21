@@ -17,6 +17,22 @@
       "PackagePath": "staticwebassets\\index.js"
     },
     {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\logos\\apple-pay-logo.png",
+      "PackagePath": "staticwebassets\\logos\\apple-pay-logo.png"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\logos\\cashapp-logo.png",
+      "PackagePath": "staticwebassets\\logos\\cashapp-logo.png"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\logos\\facebook-pay-logo.png",
+      "PackagePath": "staticwebassets\\logos\\facebook-pay-logo.png"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\logos\\paypal-logo.png",
+      "PackagePath": "staticwebassets\\logos\\paypal-logo.png"
+    },
+    {
       "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\1-ode-to-joy.pdf",
       "PackagePath": "staticwebassets\\pdfs\\1-ode-to-joy.pdf"
     },
