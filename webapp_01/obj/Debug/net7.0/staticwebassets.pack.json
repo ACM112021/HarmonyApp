@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\logos\\facebook-pay-logo.png"
     },
     {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\logos\\meta-pay-logo.png",
+      "PackagePath": "staticwebassets\\logos\\meta-pay-logo.png"
+    },
+    {
       "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\logos\\paypal-logo.png",
       "PackagePath": "staticwebassets\\logos\\paypal-logo.png"
     },
@@ -79,6 +83,22 @@
     {
       "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\pdfs\\Sightreading FEB 21[5094].pdf",
       "PackagePath": "staticwebassets\\pdfs\\Sightreading FEB 21[5094].pdf"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\qrcodes\\cashapp-qr-code.png",
+      "PackagePath": "staticwebassets\\qrcodes\\cashapp-qr-code.png"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\qrcodes\\metapay-qr-code.jpg",
+      "PackagePath": "staticwebassets\\qrcodes\\metapay-qr-code.jpg"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\qrcodes\\paypal-qr-code-2.jpg",
+      "PackagePath": "staticwebassets\\qrcodes\\paypal-qr-code-2.jpg"
+    },
+    {
+      "Id": "D:\\HarmonyApp\\HarmonyApp\\webapp_01\\wwwroot\\qrcodes\\paypal-qr-code.png",
+      "PackagePath": "staticwebassets\\qrcodes\\paypal-qr-code.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.webbapp_01.props",
