@@ -1,3 +1,9 @@
+.link-body-emphasis {
+    color: white !important;
+  }
+  
+
+
 body {
     background-color: #122932ff;
     /* "gunmetal" color */
@@ -42,6 +48,7 @@ body {
     font-family: 'Script Std', cursive;
     margin-bottom: 25px;
     margin-top: 25px;
+    color: white;
 }
 
 .col-music-sheet-table {
@@ -49,6 +56,20 @@ body {
     padding-top: 20px;
     font-family: 'Script Std', cursive;
     margin-bottom: 25px;
+    border-width: 8px;
+    border-style: ridge;
+    border-color: #3498db;
+}
+
+
+.col-tutorial-table {
+    background-color: white;
+    padding-top: 20px;
+    font-family: 'Script Std', cursive;
+    margin-bottom: 25px;
+    border-width: 8px;
+    border-style: ridge;
+    border-color: #3498db;
 }
 
 
@@ -59,6 +80,7 @@ body {
     text-align: center;
     padding-top: 20px;
     margin-left: 75px;
+    color: white;
 }
 
 
@@ -66,6 +88,7 @@ body {
 .row-insert-update-delete {
     background-color: 122932ff;
     /* "gunmetal" color */
+    color: white;
     padding-top: 40px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -182,12 +205,3 @@ form {
   .qr-code-container .payment-qr {
     margin-top: 10px;
   }
-
-
-
-
-
-
-
-
-
