@@ -1,7 +1,9 @@
 body {
     background-color: #122932ff;
     /* "gunmetal" color */
-    font-family: 'Courier New', monospace;
+    font-family: 'Script Std', cursive;
+    display: flex;
+    height: 100%;
 }
 
 
@@ -23,29 +25,40 @@ body {
     /* "non-photo-blue" color */
     text-align: left;
     color: white;
-    margin-top: 100px;
+    margin-top: 300px;
     border-width: 8px;
     border-style: groove;
     border-color: #3498db;
     font-family: 'Script Std', cursive;
+    /* fixed footer at bottom with below code */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .page-title {
     text-align: center;
     font-family: 'Script Std', cursive;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .col-music-sheet-table {
     background-color: white;
     padding-top: 20px;
     font-family: 'Script Std', cursive;
+    margin-bottom: 25px;
 }
+
+
+
 
 .my-right {
     background-color: #122932ff;
     text-align: center;
     padding-top: 20px;
+    margin-left: 75px;
 }
 
 
@@ -65,8 +78,7 @@ h4 {
 }
 
 form {
-    padding-left: 10px;
-    padding-right: 10px;
+    align-items: center;
 }
 
 .page-title {
@@ -74,6 +86,19 @@ form {
     text-align: center;
     padding-top: 10px;
 }
+
+
+
+/* Tutorials Page */
+
+
+
+.page-tutorials {
+    flex: 1;
+    height: 100%;
+}
+
+
 
 
 
@@ -165,6 +190,4 @@ form {
 
 
 
-
-/* Discussion page below: */
 
