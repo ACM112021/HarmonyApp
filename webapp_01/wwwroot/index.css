@@ -1,17 +1,28 @@
 body {
-    background-color: lavender;
+    background-color: #122932ff;
+    /* "gunmetal" color */
 }
 
 
-.my-header,
-.my-footer {
-    background-color: darkgray;
-    text-align: left;
+.my-header {
+    background-color: rgba(3, 95, 98, 0.902);
+    /* "non-photo-blue" color */
+    text-align: center;
     color: white;
 }
 
+
+
+.my-footer {
+    background-color: rgba(3, 95, 98, 0.902);
+    /* "non-photo-blue" color */
+    text-align: left;
+    color: white;
+    margin-top: 100px;
+}
+
 .page-title {
-    padding-right: 725px;
+    text-align: center;
 }
 
 .col-music-sheet-table {
@@ -20,13 +31,16 @@ body {
 }
 
 .my-right {
-    background-color: lightgray;
+    background-color: #122932ff;
     text-align: center;
     padding-top: 20px;
 }
 
+
+
 .row-insert-update-delete {
-    background-color: lightgray;
+    background-color: 122932ff;
+    /* "gunmetal" color */
     padding-top: 40px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -43,7 +57,7 @@ form {
 }
 
 .page-title {
-    background-color: lightgray;
+
     text-align: center;
     padding-top: 10px;
 }
@@ -79,7 +93,7 @@ form {
 
 
 .payment-logos-container .payment-logo {
-    margin-left: 200px;
+    margin-left: 400px;
   }
 
 
