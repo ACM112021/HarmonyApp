@@ -5,20 +5,26 @@ body {
 
 
 .my-header {
-    background-color: rgba(3, 95, 98, 0.902);
+    background-color: #0a5180;
     /* "non-photo-blue" color */
     text-align: center;
     color: white;
+    border-width: 8px;
+    border-style: groove;
+    border-color: #3498db;
 }
 
 
 
 .my-footer {
-    background-color: rgba(3, 95, 98, 0.902);
+    background-color: #0a5180;
     /* "non-photo-blue" color */
     text-align: left;
     color: white;
     margin-top: 100px;
+    border-width: 8px;
+    border-style: groove;
+    border-color: #3498db;
 }
 
 .page-title {
