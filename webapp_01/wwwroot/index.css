@@ -1,6 +1,7 @@
 body {
     background-color: #122932ff;
     /* "gunmetal" color */
+    font-family: 'Courier New', monospace;
 }
 
 
@@ -12,6 +13,7 @@ body {
     border-width: 8px;
     border-style: groove;
     border-color: #3498db;
+    font-family: 'Courier New', monospace;
 }
 
 
@@ -25,15 +27,18 @@ body {
     border-width: 8px;
     border-style: groove;
     border-color: #3498db;
+    font-family: 'Courier New', monospace;
 }
 
 .page-title {
     text-align: center;
+    font-family: 'Courier New', monospace;
 }
 
 .col-music-sheet-table {
     background-color: white;
     padding-top: 20px;
+    font-family: 'Courier New', monospace;
 }
 
 .my-right {
@@ -51,6 +56,7 @@ body {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: 'Courier New', monospace;
 }
 
 h4 {
