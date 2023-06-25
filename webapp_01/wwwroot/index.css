@@ -171,20 +171,21 @@ form {
 
 
 #paypal-logo {
-    margin-bottom: 25px;
+    margin-bottom: 150px;
+
 }
 
 
 #cashapp-logo {
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 15px;
+    margin-bottom: 35px;
 }
 
 
 .meta-pay-logo {
     filter: brightness(150%);
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 150px;
+    margin-bottom: 125px;
 }
 
 
@@ -204,4 +205,8 @@ form {
   
   .qr-code-container .payment-qr {
     margin-top: 10px;
+  }
+
+  .payment-qr {
+    margin-bottom: 50px;  
   }
