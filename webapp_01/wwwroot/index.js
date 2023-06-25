@@ -56,6 +56,8 @@ function webapp_02() {
 
 
     // Music Sheet event listeners
+
+    textSearchMusicSheets.addEventListener("keyup", handleTextMusicSearchKeyUp);
     
 
     buttonSearchMusicSheets.addEventListener("click", searchMusicSheets);
@@ -98,6 +100,9 @@ function webapp_02() {
 
 
     // Tutorial Event Listeners
+
+
+    textSearchTutorials.addEventListener("keyup", handleTextTutorialSearchKeyUp);
 
 
     buttonSearchTutorials.addEventListener("click", searchTutorials);
@@ -194,6 +199,11 @@ function webapp_02() {
 
 
     // Music Sheet Functions
+
+
+    function handleTextMusicSearchKeyUp(e) {
+        searchMusicSheets();
+    }
 
 
 
@@ -527,6 +537,11 @@ function webapp_02() {
 
 
     // Tutorial Functions:
+
+
+    function handleTextTutorialSearchKeyUp(e) {
+        searchTutorials();
+    }
 
 
 
